@@ -1,0 +1,63 @@
+:root {
+  /* Color Tokens - Light Executive Theme */
+  --color-bg-base: #FAFAFA;       /* Soft White Background */
+  --color-bg-canvas: #FFFFFF;     /* Pure Executive White */
+  --color-bg-alt: #F7F8FA;        /* Cold Executive Light Grey */
+  
+  --color-primary: #071D49;       /* Primary Navy */
+  --color-primary-light: #0B2961; /* Navy Hover State */
+  --color-accent: #C9962B;        /* Gold Accent */
+  --color-accent-light: #D9A63B;  /* Gold Hover State */
+  
+  --color-text-main: #111827;     /* High Contrast Off-black */
+  --color-text-muted: #5E6472;    /* Text Gray */
+  --color-border: #E7E7E7;        /* Border */
+
+  /* Typography Scale */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.3vw, 0.95rem);
+  --text-base: clamp(1rem, 0.9rem + 0.4vw, 1.1rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem);
+  --text-3xl: clamp(1.875rem, 1.6rem + 1vw, 2.25rem);
+  --text-4xl: clamp(2.25rem, 1.9rem + 1.2vw, 3rem);
+  --text-5xl: clamp(3rem, 2.5rem + 1.8vw, 4.25rem);
+  --text-hero: clamp(3.25rem, 2.8rem + 2.8vw, 5.5rem);
+
+  /* Spacing Scale */
+  --space-unit: 8px;
+  --space-xxs: calc(var(--space-unit) * 0.5); /* 4px */
+  --space-xs: calc(var(--space-unit) * 1);    /* 8px */
+  --space-sm: calc(var(--space-unit) * 2);    /* 16px */
+  --space-md: calc(var(--space-unit) * 3);    /* 24px */
+  --space-lg: calc(var(--space-unit) * 4);    /* 32px */
+  --space-xl: calc(var(--space-unit) * 6);    /* 48px */
+  --space-xxl: calc(var(--space-unit) * 8);   /* 64px */
+  --space-section: calc(var(--space-unit) * 12); /* 96px */
+  --space-section-lg: calc(var(--space-unit) * 16); /* 128px */
+
+  /* Layout Widths */
+  --container-max-width: 1320px;
+  --container-padding: clamp(1.5rem, 5vw, 5rem);
+
+  /* Shadows */
+  --shadow-flat: none;
+  --shadow-premium-sm: 0 2px 8px -2px rgba(11, 35, 65, 0.03);
+  --shadow-premium-md: 0 12px 24px -8px rgba(11, 35, 65, 0.05);
+  --shadow-premium-lg: 0 24px 48px -12px rgba(11, 35, 65, 0.07);
+
+  /* Borders & Radius */
+  --radius-none: 0px;
+  --radius-pill: 9999px;
+  --radius-card-sm: 2px;
+  --radius-card-lg: 4px;
+  --border-hairline: 1px solid var(--color-border);
+
+  /* Transitions */
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}

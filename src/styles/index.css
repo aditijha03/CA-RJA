@@ -1,0 +1,86 @@
+@import './variables.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: auto; /* Handled by Lenis smooth scroll */
+  }
+
+  body {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  /* Global premium focus rings for accessibility */
+  :focus-visible {
+    outline: 2.5px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+/* Custom hairline borders and premium UI utilities */
+.border-hairline {
+  border: var(--border-hairline);
+}
+
+.border-hairline-t {
+  border-top: var(--border-hairline);
+}
+
+.border-hairline-b {
+  border-bottom: var(--border-hairline);
+}
+
+.border-hairline-l {
+  border-left: var(--border-hairline);
+}
+
+.border-hairline-r {
+  border-right: var(--border-hairline);
+}
+
+/* Smooth layout fades */
+.fade-in-on-load {
+  opacity: 0;
+  animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Lenis CSS integration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
