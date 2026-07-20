@@ -307,10 +307,25 @@ const ServicesPage: React.FC = () => {
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('submitting');
+    
+    // Construct WhatsApp Message
+    const { name, email, phone, company, service, message } = formData;
+    let waText = `*New Consultation Request*\n\n`;
+    waText += `*Name:* ${name}\n`;
+    waText += `*Email:* ${email}\n`;
+    waText += `*Phone:* ${phone}\n`;
+    if (company) waText += `*Company:* ${company}\n`;
+    waText += `*Practice Focus:* ${service}\n`;
+    if (message) waText += `*Description:* ${message}\n`;
+    
+    const waNumber = CONTACT_DATA.phone.replace(/[^0-9]/g, '');
+    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waText)}`;
+    
     setTimeout(() => {
+      window.open(waUrl, '_blank');
       setFormStatus('success');
       setFormData({ name: '', email: '', phone: '', company: '', service: '', message: '' });
-    }, 1200);
+    }, 800);
   };
 
   // General Services FAQs
