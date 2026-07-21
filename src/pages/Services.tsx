@@ -15,12 +15,16 @@ import {
   Notebook, 
   Coins, 
   Compass,
-  ArrowRight,
+  CalendarDays, 
+  ArrowRight, 
   ChevronDown,
-  CheckCircle2,
-  Phone,
-  Mail
+  CheckCircle2, 
+  FileText, 
+  Phone, 
+  Mail, 
+  Clock 
 } from 'lucide-react';
+import { SERVICES_DETAIL_DATA } from '../constants/servicesData';
 import { CONTACT_DATA } from '../constants/data';
 
 // Map icons to names
@@ -441,7 +445,7 @@ const ServicesPage: React.FC = () => {
                   ref={badgeRef}
                   className="absolute -left-4 bottom-6 border border-border bg-bg-canvas shadow-lg px-md py-sm flex items-center gap-sm"
                 >
-                  <span className="font-serif text-2xl text-accent leading-none">18+</span>
+                  <span className="font-serif text-2xl text-accent leading-none">10+</span>
                   <span className="font-sans text-[9px] uppercase tracking-[0.15em] text-text-muted leading-tight max-w-[70px]">
                     Years of Practice
                   </span>
@@ -661,25 +665,25 @@ const ServicesPage: React.FC = () => {
             </div>
             
             <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-md pt-sm lg:pt-0">
-              <div className="border border-border/10 bg-primary-light/45 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
+              <div className="border border-border/10 bg-white/5 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
                 <span className="font-serif text-xl font-medium text-bg-canvas">Senior Oversight</span>
                 <p className="font-sans text-xs text-[#B8C0CC] leading-relaxed mt-xs">
                   Every statutory audit, direct-tax dispute, and corporate structure is actively planned and reviewed by a senior managing partner.
                 </p>
               </div>
-              <div className="border border-border/10 bg-primary-light/45 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
+              <div className="border border-border/10 bg-white/5 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
                 <span className="font-serif text-xl font-medium text-bg-canvas">Deadline Protection</span>
                 <p className="font-sans text-xs text-[#B8C0CC] leading-relaxed mt-xs">
                   Our internal trackers coordinate files and upload dates, guaranteeing zero delayed filings and complete penalty insulation.
                 </p>
               </div>
-              <div className="border border-border/10 bg-primary-light/45 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
+              <div className="border border-border/10 bg-white/5 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
                 <span className="font-serif text-xl font-medium text-bg-canvas">Secure Infrastructure</span>
                 <p className="font-sans text-xs text-[#B8C0CC] leading-relaxed mt-xs">
                   We utilize dual-factor secure client portals and server-side encryption to guarantee corporate data safety.
                 </p>
               </div>
-              <div className="border border-border/10 bg-primary-light/45 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
+              <div className="border border-border/10 bg-white/5 p-md flex flex-col justify-between rounded-card-sm hover:border-accent/30 transition-premium shadow-premium-sm">
                 <span className="font-serif text-xl font-medium text-bg-canvas">Regulatory Foresight</span>
                 <p className="font-sans text-xs text-[#B8C0CC] leading-relaxed mt-xs">
                   We translate newly issued ICAI guidelines, GST circulars, and MCA notifications into proactive adjustments for your firm.
@@ -811,7 +815,7 @@ const ServicesPage: React.FC = () => {
 
         <Container>
           {/* Dark executive container card */}
-          <div className="relative z-10 bg-primary-light/35 border border-border/10 rounded-card-lg p-md md:p-xl lg:p-xxl shadow-premium-lg">
+          <div className="relative z-10 bg-white/5 border border-border/10 rounded-card-lg p-md md:p-xl lg:p-xxl shadow-premium-lg">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl lg:gap-xxl items-stretch">
               
               {/* Left CTA Info */}
@@ -854,7 +858,7 @@ const ServicesPage: React.FC = () => {
                 {/* Contact Coordinates */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-sm pt-xs">
                   <div className="flex items-start space-x-sm">
-                    <div className="p-xxs bg-primary-light/50 text-accent border border-border/10 rounded-none mt-xxs">
+                    <div className="p-xxs bg-white/10 text-accent border border-border/10 rounded-none mt-xxs">
                       <Phone size={12} />
                     </div>
                     <div className="flex flex-col">
@@ -865,7 +869,7 @@ const ServicesPage: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-sm">
-                    <div className="p-xxs bg-primary-light/50 text-accent border border-border/10 rounded-none mt-xxs">
+                    <div className="p-xxs bg-white/10 text-accent border border-border/10 rounded-none mt-xxs">
                       <Mail size={12} />
                     </div>
                     <div className="flex flex-col">
@@ -881,7 +885,7 @@ const ServicesPage: React.FC = () => {
               {/* Right Scheduling Form */}
               <div className="lg:col-span-6 flex items-center justify-center mt-xl lg:mt-0 relative z-10">
                 {formStatus === 'success' ? (
-                  <div className="w-full bg-primary-light/45 border border-border/10 p-md md:p-lg flex flex-col items-center justify-center text-center rounded-card-sm shadow-premium-sm min-h-[400px] select-none text-bg-canvas">
+                  <div className="w-full bg-white/5 border border-border/10 p-md md:p-lg flex flex-col items-center justify-center text-center rounded-card-sm shadow-premium-sm min-h-[400px] select-none text-bg-canvas">
                     <CheckCircle2 size={48} className="text-accent" />
                     <h3 className="font-serif text-xl md:text-2xl text-bg-canvas font-medium tracking-tight mt-md">
                       Consultation Request Logged
@@ -900,7 +904,7 @@ const ServicesPage: React.FC = () => {
                   <form 
                     ref={formRef}
                     onSubmit={handleFormSubmit}
-                    className="w-full bg-primary-light/45 border border-border/10 p-md md:p-lg rounded-card-sm shadow-premium-sm flex flex-col justify-between space-y-md opacity-0 text-bg-canvas"
+                    className="w-full bg-white/5 border border-border/10 p-md md:p-lg rounded-card-sm shadow-premium-sm flex flex-col justify-between space-y-md opacity-0 text-bg-canvas"
                   >
                     <div className="flex items-center justify-between border-b border-border/10 pb-sm select-none">
                       <div className="flex items-center space-x-xxs">
@@ -926,7 +930,7 @@ const ServicesPage: React.FC = () => {
                           required
                           value={formData.name}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="Rajesh Mehta"
                         />
                       </div>
@@ -941,7 +945,7 @@ const ServicesPage: React.FC = () => {
                           required
                           value={formData.email}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="rajesh@mehta.com"
                         />
                       </div>
@@ -956,7 +960,7 @@ const ServicesPage: React.FC = () => {
                           required
                           value={formData.phone}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="+91 98765 43210"
                         />
                       </div>
@@ -970,7 +974,7 @@ const ServicesPage: React.FC = () => {
                           name="company"
                           value={formData.company}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="Mehta Industries"
                         />
                       </div>
@@ -986,17 +990,14 @@ const ServicesPage: React.FC = () => {
                         required
                         value={formData.service}
                         onChange={handleFormChange}
-                        className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none cursor-pointer appearance-none"
+                        className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none cursor-pointer appearance-none"
                       >
                         <option value="" disabled className="bg-primary text-bg-canvas">Select Core practice area...</option>
-                        <option value="audit" className="bg-primary text-bg-canvas">Audit &amp; Assurance</option>
-                        <option value="tax" className="bg-primary text-bg-canvas">Tax Advisory</option>
-                        <option value="gst" className="bg-primary text-bg-canvas">GST Compliance</option>
-                        <option value="registration" className="bg-primary text-bg-canvas">Business Registration</option>
-                        <option value="accounting" className="bg-primary text-bg-canvas">Accounting Services</option>
-                        <option value="cfo" className="bg-primary text-bg-canvas">Virtual CFO Services</option>
-                        <option value="startup" className="bg-primary text-bg-canvas">Startup Advisory</option>
-                        <option value="roc" className="bg-primary text-bg-canvas">ROC Compliance</option>
+                        {SERVICES_DETAIL_DATA.map((srv) => (
+                          <option key={srv.slug} value={srv.slug} className="bg-primary text-bg-canvas">
+                            {srv.title}
+                          </option>
+                        ))}
                       </select>
                     </div>
 
@@ -1010,7 +1011,7 @@ const ServicesPage: React.FC = () => {
                         rows={3}
                         value={formData.message}
                         onChange={handleFormChange}
-                        className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none resize-none placeholder-[#B8C0CC]/40"
+                        className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none resize-none placeholder-[#B8C0CC]/40"
                         placeholder="Briefly state transaction parameters or audit timeline constraints..."
                       />
                     </div>

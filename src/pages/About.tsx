@@ -288,9 +288,9 @@ export default function About() {
         <div className="container mx-auto px-6 lg:px-12 relative z-20 flex flex-col md:flex-row items-center justify-center gap-6 -mt-10 mb-16 opacity-0" ref={addToRefs}>
           <div className="flex items-center gap-4 bg-[#0B2341]/80 backdrop-blur-md border border-[#0B2341]/50 px-6 py-4 rounded-full shadow-xl">
             <div className="flex -space-x-3">
-              <img className="w-10 h-10 rounded-full border-2 border-[#0B2341] object-cover" src="/assets/images/about/rajesh_founder.png" alt="Rajesh" />
-              <img className="w-10 h-10 rounded-full border-2 border-[#0B2341] object-cover" src="/assets/images/about/sneha_partner.png" alt="Sneha" />
-              <img className="w-10 h-10 rounded-full border-2 border-[#0B2341] object-cover" src="/assets/images/about/amit_partner.png" alt="Amit" />
+              <img className="w-10 h-10 rounded-full border-2 border-[#0B2341] object-cover" src="/assets/images/team/CA. Rohit Jhunjhunwala - Founder & Direct Tax Head.png" alt="CA. Rohit Jhunjhunwala" />
+              <img className="w-10 h-10 rounded-full border-2 border-[#0B2341] object-cover" src="/assets/images/team/CA. Mitesh Gogri - CFO Service & Indirect Tax Head.png" alt="CA. Mitesh Gogri" />
+              <img className="w-10 h-10 rounded-full border-2 border-[#0B2341] object-cover" src="/assets/images/team/CS. Priti Narnolia - Compliance Head.png" alt="CS. Priti Narnolia" />
             </div>
             <div className="text-left border-l border-white/20 pl-4">
               <p className="font-bold text-white text-sm">Backed by Experts</p>

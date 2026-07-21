@@ -50,7 +50,7 @@ export const HERO_DATA = {
 // Stats Section Content
 export const STATS_DATA: Stat[] = [
   { id: 'stat-1', value: 2500, suffix: '+', label: 'Clients Served Globally' },
-  { id: 'stat-2', value: 18, suffix: '+', label: 'Years of Professional Practice' },
+  { id: 'stat-2', value: 10, suffix: '+', label: 'Years of Professional Practice' },
   { id: 'stat-3', value: 99, suffix: '%', label: 'Client Retention Rate' },
   { id: 'stat-4', value: 24, suffix: '/7', label: 'Dedicated Support Infrastructure' },
 ];
@@ -402,12 +402,12 @@ export const FOOTER_LINKS: FooterSection[] = [
   {
     title: 'Our Services',
     links: [
-      { label: 'Audit & Assurance', href: '/services/audit-assurance' },
-      { label: 'Tax Advisory', href: '/services/tax-advisory' },
-      { label: 'GST Compliance', href: '/services/gst-compliance' },
-      { label: 'Business Registration', href: '/services/business-registration' },
+      { label: 'Audit & Assurance', href: '/services/statutory-audit-compliance' },
+      { label: 'Tax Advisory', href: '/services/tax-planning-and-advisory' },
+      { label: 'GST Compliance', href: '/services/gst-return-filing' },
+      { label: 'Business Registration', href: '/services/company-llp-firms-trust-formation' },
       { label: 'Accounting Services', href: '/services/accounting-services' },
-      { label: 'Virtual CFO', href: '/services/virtual-cfo' },
+      { label: 'Virtual CFO', href: '/services/virtual-cfo-services' },
     ],
   },
 ];

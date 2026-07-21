@@ -137,7 +137,7 @@ export const WhyChooseUs: React.FC = () => {
               >
                 <div className="relative w-full h-full overflow-hidden border border-border/20 rounded-card-sm bg-primary-light">
                   <img
-                    src="/assets/images/boardroom_consultation.png"
+                    src="/assets/images/rja.png"
                     alt={WHY_CHOOSE_US_DATA.imageDesc}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
@@ -158,7 +158,7 @@ export const WhyChooseUs: React.FC = () => {
                 className="absolute -top-4 left-4 md:-top-6 md:-left-6 bg-bg-canvas text-primary px-sm py-xs md:p-md border border-accent/35 shadow-premium-lg rounded-card-sm max-w-[110px] md:max-w-[130px] z-20 opacity-0 flex flex-col items-center justify-center text-center select-none"
               >
                 <span className="font-serif text-2xl md:text-3xl font-bold text-accent leading-none">
-                  25+
+                  10+
                 </span>
                 <span className="mt-[4px] font-sans text-[8px] md:text-[9px] font-bold text-text-muted tracking-widest uppercase leading-tight">
                   Years of Practice

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Container } from '../components/common/Container';
 import { CONTACT_DATA } from '../constants/data';
+import { SERVICES_DETAIL_DATA } from '../constants/servicesData';
 import { splitReveal, fadeIn } from '../animations/helpers';
 import gsap from 'gsap';
 import {
@@ -338,12 +339,11 @@ const Contact: React.FC = () => {
                         className={`${inputClass('service')} appearance-none cursor-pointer`}
                       >
                         <option value="" disabled>Select core practice area...</option>
-                        <option value="audit">Statutory Audit &amp; Assurance</option>
-                        <option value="gst">GST Advisory &amp; Filing</option>
-                        <option value="tax">Income Tax Litigation &amp; Returns</option>
-                        <option value="roc">ROC Secretarial Compliance</option>
-                        <option value="incorp">Company Incorporation / Structuring</option>
-                        <option value="advisory">Corporate Financial Advisory</option>
+                        {SERVICES_DETAIL_DATA.map((srv) => (
+                          <option key={srv.slug} value={srv.slug}>
+                            {srv.title}
+                          </option>
+                        ))}
                       </select>
                       {errors.service && <span id="err-service" className="flex items-center gap-xxs text-[10px] text-red-500"><AlertCircle size={11} />{errors.service}</span>}
                     </div>

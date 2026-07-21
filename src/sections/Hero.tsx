@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Container } from '../components/common/Container';
+import { Link } from 'react-router-dom';
 import {
   ShieldCheck,
   Trophy,
@@ -197,13 +198,13 @@ export const Hero: React.FC = () => {
             <div
               className="flex flex-row items-center space-x-md w-auto pt-xs animate-buttons opacity-0"
             >
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="h-[54px] px-10 inline-flex items-center justify-center bg-gradient-to-r from-[#C9962B] to-[#D9A63B] text-white font-sans text-xs font-bold tracking-widest uppercase transition-premium shadow-[0_4px_16px_rgba(201,150,43,0.15)] hover:shadow-[0_8px_24px_rgba(201,150,43,0.25)] hover:-translate-y-[3px] select-none cursor-pointer border border-[#C9962B]/20 rounded-none"
               >
                 <span>Schedule Free Consultation</span>
                 <span className="ml-xs">&rarr;</span>
-              </a>
+              </Link>
               <a
                 href="#services"
                 className="h-[54px] px-10 inline-flex items-center justify-center bg-white text-[#071D49] border border-[#071D49] font-sans text-xs font-bold tracking-widest uppercase transition-premium hover:bg-[#071D49]/5 select-none cursor-pointer rounded-none"
@@ -339,10 +340,10 @@ export const Hero: React.FC = () => {
         >
           <div className="grid grid-cols-2 md:grid-cols-5 h-full items-center">
             {[
-              { val: 10, suffix: '+', displayVal: '18+', label: 'Years of Experience', icon: Trophy },
-              { val: 1000, suffix: '+', displayVal: '500+', label: 'Businesses Served', icon: Building2 },
-              { val: 2000, suffix: '+', displayVal: '1000+', label: 'GST Returns Filed', icon: FileText },
-              { val: 20, suffix: '+', displayVal: '50+', label: 'Industries Served', icon: Award },
+              { val: 10, suffix: '+', displayVal: '10+', label: 'Years of Experience', icon: Trophy },
+              { val: 1000, suffix: '+', displayVal: '1000+', label: 'Businesses Served', icon: Building2 },
+              { val: 2000, suffix: '+', displayVal: '2000+', label: 'GST Returns Filed', icon: FileText },
+              { val: 20, suffix: '+', displayVal: '20+', label: 'Industries Served', icon: Award },
               { val: null, suffix: '', displayVal: 'PAN India', label: 'Service Coverage', icon: MapPin }
             ].map((item, idx) => (
               <div 
@@ -417,23 +418,23 @@ font-medium leading-none mt-1">
           {/* Quote Card */}
           <div className="lg:col-span-4 bg-white py-4 px-6 rounded-xl border border-[#E8E8E8] shadow-[0_10px_35px_rgba(7,29,73,0.04)] flex items-center space-x-md text-left hover:border-[#C9962B]/10 hover:shadow-premium-md transition-all duration-300">
             <img 
-              src="/assets/images/partner_portrait.png" 
-              alt="CA Rahul Jhunjhunwala" 
+              src="/assets/images/team/CA. Rohit Jhunjhunwala - Founder & Direct Tax Head.png" 
+              alt="CA Rohit Jhunjhunwala" 
               className="w-[64px] h-[64px] rounded-full object-cover shrink-0 border border-[#C9962B]/20 bg-[#F7F8FA] shadow-sm"
             />
             <div className="flex-1 flex flex-col justify-center space-y-1">
               <h4 className="font-sans text-[11px] font-bold text-[#071D49] leading-tight">
-                Message from Managing Partner
+                Message from Founder
               </h4>
               <p className="font-sans text-[9.5px] text-[#5E6472] leading-relaxed">
                 At R. Jhunjhunwala & Associates, we believe in building long-term relationships by delivering Compliance, Transparency and Value to every client.
               </p>
               <div className="pt-0.5">
                 <span className="font-sans text-[9px] font-bold text-[#071D49] block leading-none">
-                  – CA Rahul Jhunjhunwala
+                  – CA Rohit Jhunjhunwala
                 </span>
                 <span className="font-sans text-[7.5px] text-[#5E6472] uppercase tracking-wider font-semibold block mt-0.5">
-                  Managing Partner
+                  Founder & Direct Tax Head
                 </span>
               </div>
             </div>
@@ -459,7 +460,7 @@ font-medium leading-none mt-1">
 
         {/* 3. Heading */}
         <h1 className="font-serif text-[42px] text-center text-[#071D49] leading-[1.15] font-medium tracking-tight animate-title mt-0">
-          Charted Accountant.<br />
+          Chartered Accountants.<br />
           <span className="font-serif italic font-normal text-[#071D49]">Business Growth</span>
           <span className="text-[#C9962B]">.</span>
         </h1>
@@ -482,7 +483,7 @@ font-medium leading-none mt-1">
             {/* Floating Badge */}
             <div className="absolute top-4 left-4 z-30 bg-[#071D49]/95 backdrop-blur-[4px] text-white p-2 rounded shadow-premium-md flex flex-col items-center justify-center min-w-[76px] border border-white/12">
               <Trophy size={12} className="text-[#C9962B] mb-0.5" />
-              <span className="font-sans text-sm font-bold leading-none text-[#C9962B]">18+</span>
+              <span className="font-sans text-sm font-bold leading-none text-[#C9962B]">10+</span>
               <span className="font-sans text-[6.5px] font-semibold text-white/90 tracking-wider uppercase text-center mt-0.5 leading-tight">
                 Years of <br /> Excellence
               </span>
@@ -497,13 +498,13 @@ font-medium leading-none mt-1">
 
         {/* 6. CTA Buttons (Full-width, large tap targets) */}
         <div className="flex flex-col space-y-xs w-full max-w-[380px] mx-auto pt-xxs animate-buttons opacity-0">
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="w-full h-[52px] inline-flex items-center justify-center bg-gradient-to-r from-[#C9962B] to-[#D9A63B] text-white font-sans text-xs font-semibold tracking-widest uppercase transition-premium shadow-premium-md"
           >
             <span>Schedule Free Consultation</span>
             <span className="ml-xs">&rarr;</span>
-          </a>
+          </Link>
           <a
             href="#services"
             className="w-full h-[52px] inline-flex items-center justify-center bg-white text-[#071D49] border border-[#071D49] font-sans text-xs font-semibold tracking-widest uppercase transition-premium"
@@ -516,7 +517,7 @@ font-medium leading-none mt-1">
         <div  className="w-full border-t border-b border-[#E7E7E7]/60 py-sm overflow-x-auto scrollbar-none flex space-x-md">
           {[
             { label: 'ICAI Registered', icon: ShieldCheck, desc: 'Firm' },
-            { label: '18+ Years of', icon: Trophy, desc: 'Experience' },
+            { label: '10+ Years of', icon: Trophy, desc: 'Experience' },
             { label: '500+ Businesses', icon: Building2, desc: 'Served' },
             { label: 'PAN India', icon: MapPin, desc: 'Service Coverage' },
             { label: 'Confidential', icon: Lock, desc: '& Secure' },
@@ -534,42 +535,47 @@ font-medium leading-none mt-1">
           ))}
         </div>
 
-        {/* 8. Statistics Strip (Mobile stacked/grid cards) */}
-        <div className="w-full max-w-[380px] mx-auto animate-fade-in">
-          <div className="grid grid-cols-2 gap-xs">
+        {/* 8. Statistics Strip (Mobile horizontal scroll matching desktop) */}
+        <div className="w-full max-w-[100vw] overflow-x-auto scrollbar-none animate-fade-in px-4 -mx-4 pb-2">
+          <div 
+            data-theme="dark"
+            className="w-max bg-[#071D49] rounded-card-sm border border-white/5 shadow-[0_16px_36px_-8px_rgba(7,29,73,0.12)] relative z-10 select-none flex h-[70px] items-center"
+          >
             {[
-              { val: 18, suffix: '+', displayVal: '10+', label: 'Years Experience', icon: Trophy },
-              { val: 500, suffix: '+', displayVal: '500+', label: 'Businesses Served', icon: Building2 },
-              { val: 1000, suffix: '+', displayVal: '1000+', label: 'GST Returns Filed', icon: FileText },
-              { val: 50, suffix: '+', displayVal: '50+', label: 'Industries Served', icon: Award },
+              { val: 10, suffix: '+', displayVal: '10+', label: 'Years of Experience', icon: Trophy },
+              { val: 1000, suffix: '+', displayVal: '1000+', label: 'Businesses Served', icon: Building2 },
+              { val: 2000, suffix: '+', displayVal: '2000+', label: 'GST Returns Filed', icon: FileText },
+              { val: 20, suffix: '+', displayVal: '20+', label: 'Industries Served', icon: Award },
               { val: null, suffix: '', displayVal: 'PAN India', label: 'Service Coverage', icon: MapPin }
             ].map((item, idx) => (
               <div 
                 key={idx} 
                 className={cn(
-                  "bg-[#071D49] p-sm rounded-lg flex flex-col items-center justify-center text-center shadow-premium-sm border border-white/5",
-                  idx === 4 ? "col-span-2" : ""
+                  "flex items-center space-x-sm justify-center px-4 h-full text-left border-white/10",
+                  idx !== 4 ? "border-r" : ""
                 )}
               >
-                <div className="text-[#C9962B] mb-1">
-                  <item.icon size={16} />
+                <div className="text-[#C9962B] shrink-0">
+                  <item.icon size={22} />
                 </div>
-                {item.val !== null ? (
-                  <span 
-                    className="hero-stat-counter font-sans text-sm font-bold text-white leading-tight"
-                    data-target={item.val}
-                    data-suffix={item.suffix}
-                  >
-                    {item.displayVal}
+                <div className="flex flex-col pr-1">
+                  {item.val !== null ? (
+                    <span 
+                      className="hero-stat-counter font-sans text-sm font-bold text-white leading-tight"
+                      data-target={item.val}
+                      data-suffix={item.suffix}
+                    >
+                      {item.displayVal}
+                    </span>
+                  ) : (
+                    <span className="font-sans text-sm font-bold text-white leading-tight">
+                      {item.displayVal}
+                    </span>
+                  )}
+                  <span className="font-sans text-[10px] text-white/70 tracking-[0.08em] font-medium leading-none mt-1 whitespace-nowrap">
+                    {item.label}
                   </span>
-                ) : (
-                  <span className="font-sans text-sm font-bold text-white leading-tight">
-                    {item.displayVal}
-                  </span>
-                )}
-                <span className="font-sans text-[7px] text-white/70 uppercase tracking-wider leading-none mt-1 text-center">
-                  {item.label}
-                </span>
+                </div>
               </div>
             ))}
           </div>

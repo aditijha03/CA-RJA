@@ -719,7 +719,7 @@ export const INDUSTRIES = {
       { value: "35+", label: "NBFCs & MFIs Advised" },
       { value: "₹800Cr+", label: "Loan Book Reviewed" },
       { value: "100%", label: "RBI Returns Filed On Time" },
-      { value: "20+", label: "Years Financial Sector Experience" },
+      { value: "10+", label: "Years Financial Sector Experience" },
     ],
     highlights: [
       {

@@ -27,12 +27,12 @@ const IconMap: Record<string, React.ComponentType<{ className?: string; size?: n
 };
 
 const slugMap: Record<string, string> = {
-  'srv-audit': 'audit-assurance',
-  'srv-gst': 'gst-compliance',
-  'srv-tax': 'tax-advisory',
+  'srv-audit': 'statutory-audit-compliance',
+  'srv-gst': 'gst-return-filing',
+  'srv-tax': 'income-tax-return-filing',
   'srv-roc': 'roc-compliance',
-  'srv-incorp': 'business-registration',
-  'srv-adv': 'virtual-cfo'
+  'srv-incorp': 'company-llp-firms-trust-formation',
+  'srv-adv': 'virtual-cfo-services'
 };
 const ServiceIcon = ({ name, className, size = 20 }: { name: string; className?: string; size?: number }) => {
   const IconComponent = IconMap[name] || ShieldCheck;
@@ -189,12 +189,16 @@ export const Services: React.FC = () => {
             </div>
 
             
-             <a href="#contact"
+             <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                navigate('/contact');
+              }}
               className="inline-flex items-center justify-center gap-xs font-sans text-xs font-semibold tracking-widest text-bg-canvas bg-primary uppercase px-lg py-sm rounded-card-sm shrink-0 hover:bg-accent transition-colors duration-300 self-start md:self-center"
             >
               <span>{BUTTON_LABELS.consultation}</span>
               <ArrowUpRight size={14} />
-            </a>
+            </button>
           </div>
 
         </div>

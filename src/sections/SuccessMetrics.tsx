@@ -387,7 +387,7 @@ export const SuccessMetrics: React.FC = () => {
             <div className="bg-white border border-neutral-200 p-6 flex flex-col justify-between rounded-xl shadow-sm relative overflow-hidden select-none min-h-[200px]">
               {/* Clean Contemporary Watermark */}
               <div className="absolute -right-2 -bottom-6 font-serif text-8xl font-bold text-neutral-100 select-none pointer-events-none">
-                18
+                10
               </div>
 
               <div className="flex flex-col">
@@ -396,7 +396,7 @@ export const SuccessMetrics: React.FC = () => {
                 </span>
                 <span 
                   className="metric-number font-serif text-3xl font-medium text-neutral-900 mt-1"
-                  data-value={18}
+                  data-value={10}
                   data-suffix="+"
                 >
                   0
