@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
 const dropdownRef = useRef<HTMLDivElement>(null);
 const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // === 25 SERVICES LIST (Updated) ===
+  // === 32 SERVICES LIST (Updated) ===
   const SERVICES_ITEMS = [
     { label: 'Tax Planning and Advisory', href: '/services/tax-planning-and-advisory' },
     { label: 'Tax Audit Compliance', href: '/services/tax-audit-compliance' },
@@ -52,7 +52,14 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     { label: 'Due Diligence Services', href: '/services/due-diligence-services' },
     { label: 'FDI, ODI & Expatriate Advisory', href: '/services/advisory-for-fdi-odi-expatriate' },
     { label: 'ROC Compliance', href: '/services/roc-compliance' },
-    { label: 'Company, LLP & Trust Formation', href: '/services/company-llp-firms-trust-formation' }
+    { label: 'Company, LLP & Trust Formation', href: '/services/company-llp-firms-trust-formation' },
+    { label: 'Corporate Secretarial Services', href: '/services/corporate-secretarial-services' },
+    { label: 'Corporate Restructuring', href: '/services/corporate-restructuring' },
+    { label: 'FEMA / RBI / NBFC Compliance', href: '/services/fema-rbi-nbfc-compliance' },
+    { label: 'Secretarial Audit & Certifications', href: '/services/secretarial-audit-and-certifications' },
+    { label: 'Legal Drafting & Documentation', href: '/services/legal-drafting-and-documentation' },
+    { label: 'Intellectual Property Rights (IPR)', href: '/services/intellectual-property-rights-ipr' },
+    { label: 'Foreign Business Accounting', href: '/services/foreign-business-accounting' }
   ];
 
   // GSAP animation for desktop services dropdown
@@ -244,8 +251,8 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
         role="menu"
         aria-label="Services practice dropdown list"
       >
-        <div className="bg-bg-canvas border border-border/80 border-t-accent shadow-premium-lg rounded-card-sm w-[1000px] max-w-[95vw] p-md">
-          <div className="grid grid-cols-5 grid-rows-5 gap-sm">
+        <div className="bg-bg-canvas border border-border/80 border-t-accent shadow-premium-lg rounded-card-sm w-[1040px] max-w-[95vw] p-md">
+          <div className="grid grid-cols-4 gap-xs md:gap-sm max-h-[75vh] overflow-y-auto pr-xs">
             {SERVICES_ITEMS.map((item) => {
               const isSubActive = location.pathname === item.href;
               return (

@@ -118,7 +118,7 @@ export default function Insights() {
   const featuredRef = useRef<HTMLDivElement>(null);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  document.title = "Insights | R. Jhunjhunwala & Associates";
+  document.title = "Insights | R Jhunjhunwala & Associates";
 
   /* SEO meta description */
   useEffect(() => {

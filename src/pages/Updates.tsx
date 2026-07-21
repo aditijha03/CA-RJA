@@ -78,7 +78,7 @@ export default function Updates() {
   return (
     <div className="min-h-screen bg-bg-base text-text-main pb-24 font-sans relative">
       <Helmet>
-        <title>Regulatory Updates | R. Jhunjhunwala &amp; Associates</title>
+        <title>Regulatory Updates | R Jhunjhunwala &amp; Associates</title>
         <meta name="description" content="Stay informed with the latest ICAI announcements and regulatory notifications." />
       </Helmet>
 

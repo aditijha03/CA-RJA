@@ -38,13 +38,13 @@ export const HERO_DATA = {
   title: 'Accounting Excellence. Business Growth.',
 
   description:
-    'R. Jhunjhunwala & Associates is a trusted Chartered Accountant firm offering Tax Consultancy, GST Services, Income Tax Filing, Audit & Assurance, Accounting, Company Registration, ROC Compliance, and Business Advisory solutions for startups, SMEs, and growing enterprises across India.',
+    'R Jhunjhunwala & Associates is a trusted Chartered Accountant firm offering Tax Consultancy, GST Services, Income Tax Filing, Audit & Assurance, Accounting, Company Registration, ROC Compliance, and Business Advisory solutions for startups, SMEs, and growing enterprises across India.',
 
   imageDesc:
-    'R. Jhunjhunwala & Associates Chartered Accountant office with professionals discussing tax planning, audit and financial advisory services.',
+    'R Jhunjhunwala & Associates Chartered Accountant office with professionals discussing tax planning, audit and financial advisory services.',
 
   caption:
-    'R. Jhunjhunwala & Associates – Chartered Accountants providing tax, audit, GST and business advisory services.',
+    'R Jhunjhunwala & Associates – Chartered Accountants providing tax, audit, GST and business advisory services.',
 };
 
 // Stats Section Content
@@ -166,7 +166,7 @@ export const WHY_CHOOSE_US_DATA = {
   title: 'Why Businesses Trust Our Advisory',
   description: 'With over 10 years of rigorous compliance practice, we translate complex financial regulations into clear, actionable business strategies.',
   imageDesc: 'Executive boardroom meeting table in Mumbai, modern office interior with soft warm lighting.',
-  caption: 'Fig 2. Executive compliance briefing, R. Jhunjhunwala & Associates.',
+  caption: 'Fig 2. Executive compliance briefing, R Jhunjhunwala & Associates.',
   items: [
     {
       id: 'wcu-1',
@@ -293,7 +293,7 @@ export const METRICS_DATA: Metric[] = [
 export const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: 'test-1',
-    quote: 'R. Jhunjhunwala & Associates has been instrumental in our corporate restructuring and taxation planning. Their compliance foresight and audit transparency are exemplary. They operate with an elite degree of professional authority.',
+    quote: 'R Jhunjhunwala & Associates has been instrumental in our corporate restructuring and taxation planning. Their compliance foresight and audit transparency are exemplary. They operate with an elite degree of professional authority.',
     author: 'Vikram Mehta',
     role: 'Chief Executive Officer',
     company: 'Mehta Industries Group',
@@ -335,7 +335,7 @@ export const INSIGHTS_DATA: Insight[] = [
     isFeatured: true,
     imageDesc: 'Corporate ledger and tax planning calculator on desk.',
     imageUrl: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800',
-    author: 'R. Jhunjhunwala (Managing Partner)',
+    author: 'R Jhunjhunwala (Managing Partner)',
   },
   {
     id: 'ins-2',
@@ -413,10 +413,10 @@ export const FOOTER_LINKS: FooterSection[] = [
 ];
 
 export const FOOTER_DATA = {
-  disclaimer: 'Disclaimer: R. Jhunjhunwala & Associates is a registered partnership firm of Chartered Accountants in India, regulated by the Institute of Chartered Accountants of India (ICAI). The content of this website is for informational purposes only and does not constitute professional advice.',
+  disclaimer: 'Disclaimer: R Jhunjhunwala & Associates is a registered proprietorship firm of Chartered Accountants in India, regulated by the Institute of Chartered Accountants of India (ICAI). The content of this website is for informational purposes only and does not constitute professional advice.',
   legal: {
     privacy: '#privacy',
     terms: '#terms',
-    copyright: '© 2026 R. Jhunjhunwala & Associates. All Rights Reserved.',
+    copyright: '© 2026 R Jhunjhunwala & Associates. All Rights Reserved.',
   }
 };

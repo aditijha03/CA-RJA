@@ -97,7 +97,7 @@ export const WhyChooseUs: React.FC = () => {
                 className="font-serif text-2xl md:text-3xl lg:text-4xl text-bg-canvas font-medium leading-tight tracking-tight"
               >
                 Why Businesses Trust <br className="hidden md:inline" />
-                R. Jhunjhunwala &amp; Associates
+                R Jhunjhunwala &amp; Associates
               </h2>
 
               <p

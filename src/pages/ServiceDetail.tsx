@@ -19,7 +19,11 @@ import {
   ChevronDown,
   CheckCircle2,
   Phone,
-  Mail
+  Mail,
+  Award,
+  Globe,
+  Scale,
+  FileText
 } from 'lucide-react';
 import { CONTACT_DATA } from '../constants/data';
 
@@ -33,7 +37,11 @@ const IconMap: Record<string, React.ComponentType<{ className?: string; size?: n
   Users,
   Notebook,
   Coins,
-  Compass
+  Compass,
+  Award,
+  Globe,
+  Scale,
+  FileText
 };
 
 const ServiceIcon = ({ name, className, size = 20 }: { name: string; className?: string; size?: number }) => {

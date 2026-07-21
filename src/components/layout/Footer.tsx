@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-4 flex flex-col space-y-md">
             <Link to="/" className="flex flex-col select-none">
               <span className="font-serif text-lg font-bold tracking-wider text-primary uppercase">
-                R. Jhunjhunwala
+                R Jhunjhunwala
               </span>
               <span className="font-sans text-xs font-semibold tracking-[0.25em] text-accent uppercase">
                 &amp; Associates • Est. 2016
