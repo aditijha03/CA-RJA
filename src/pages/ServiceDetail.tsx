@@ -499,7 +499,7 @@ const ServiceDetail: React.FC = () => {
             {service.timeline.map((step, idx) => (
               <div 
                 key={idx}
-                className="process-timeline-item flex flex-col p-md bg-primary-light/45 border border-border/10 rounded-card-sm shadow-premium-sm relative opacity-0 text-bg-canvas"
+                className="process-timeline-item flex flex-col p-md bg-white/5 border border-border/10 rounded-card-sm shadow-premium-sm relative opacity-0 text-bg-canvas"
               >
                 <span className="font-serif text-2xl font-bold text-accent/40">{step.phase}</span>
                 <h3 className="font-serif text-base font-medium text-bg-canvas mt-xs">{step.title}</h3>
@@ -649,7 +649,7 @@ const ServiceDetail: React.FC = () => {
         <div className="pointer-events-none absolute w-[40vw] max-w-[500px] h-[40vw] max-h-[500px] rounded-full bg-accent/[0.02] blur-3xl right-0 top-0" />
 
         <Container>
-          <div className="relative z-10 bg-primary-light/35 border border-border/10 rounded-card-lg p-md md:p-xl lg:p-xxl shadow-premium-lg">
+          <div className="relative z-10 bg-white/5 border border-border/10 rounded-card-lg p-md md:p-xl lg:p-xxl shadow-premium-lg">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-xl lg:gap-xxl items-stretch">
               
               {/* Left Info Column */}
@@ -692,7 +692,7 @@ const ServiceDetail: React.FC = () => {
                 {/* Coordinates */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-sm pt-xs">
                   <div className="flex items-start space-x-sm">
-                    <div className="p-xxs bg-primary-light/50 text-accent border border-border/10 rounded-none mt-xxs">
+                    <div className="p-xxs bg-white/10 text-accent border border-border/10 rounded-none mt-xxs">
                       <Phone size={12} />
                     </div>
                     <div className="flex flex-col">
@@ -703,7 +703,7 @@ const ServiceDetail: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-start space-x-sm">
-                    <div className="p-xxs bg-primary-light/50 text-accent border border-border/10 rounded-none mt-xxs">
+                    <div className="p-xxs bg-white/10 text-accent border border-border/10 rounded-none mt-xxs">
                       <Mail size={12} />
                     </div>
                     <div className="flex flex-col">
@@ -719,7 +719,7 @@ const ServiceDetail: React.FC = () => {
               {/* Right Booking Form */}
               <div className="lg:col-span-6 flex items-center justify-center mt-xl lg:mt-0 relative z-10">
                 {formStatus === 'success' ? (
-                  <div className="w-full bg-primary-light/45 border border-border/10 p-md md:p-lg flex flex-col items-center justify-center text-center rounded-card-sm shadow-premium-sm min-h-[380px] select-none text-bg-canvas">
+                  <div className="w-full bg-white/5 border border-border/10 p-md md:p-lg flex flex-col items-center justify-center text-center rounded-card-sm shadow-premium-sm min-h-[380px] select-none text-bg-canvas">
                     <CheckCircle2 size={48} className="text-accent" />
                     <h3 className="font-serif text-xl md:text-2xl text-bg-canvas font-medium tracking-tight mt-md">
                       Callback Scheduled
@@ -738,7 +738,7 @@ const ServiceDetail: React.FC = () => {
                   <form 
                     ref={formRef}
                     onSubmit={handleFormSubmit}
-                    className="w-full bg-primary-light/45 border border-border/10 p-md md:p-lg rounded-card-sm shadow-premium-sm flex flex-col justify-between space-y-md text-bg-canvas"
+                    className="w-full bg-white/5 border border-border/10 p-md md:p-lg rounded-card-sm shadow-premium-sm flex flex-col justify-between space-y-md text-bg-canvas"
                   >
                     <div className="flex items-center justify-between border-b border-border/10 pb-sm select-none">
                       <span className="font-sans text-[10px] font-bold text-accent tracking-widest uppercase">
@@ -758,7 +758,7 @@ const ServiceDetail: React.FC = () => {
                           required
                           value={formData.name}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="Rajesh Mehta"
                         />
                       </div>
@@ -773,7 +773,7 @@ const ServiceDetail: React.FC = () => {
                           required
                           value={formData.email}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="rajesh@mehta.com"
                         />
                       </div>
@@ -791,7 +791,7 @@ const ServiceDetail: React.FC = () => {
                           required
                           value={formData.phone}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="+91 98765 43210"
                         />
                       </div>
@@ -805,7 +805,7 @@ const ServiceDetail: React.FC = () => {
                           name="company"
                           value={formData.company}
                           onChange={handleFormChange}
-                          className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
+                          className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none transition-colors placeholder-[#B8C0CC]/40"
                           placeholder="Mehta Industries"
                         />
                       </div>
@@ -821,7 +821,7 @@ const ServiceDetail: React.FC = () => {
                         rows={3}
                         value={formData.message}
                         onChange={handleFormChange}
-                        className="font-sans text-xs bg-primary-light/50 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none resize-none placeholder-[#B8C0CC]/40"
+                        className="font-sans text-xs bg-white/10 border border-border/10 p-xs rounded-none text-bg-canvas focus:border-accent focus:ring-0 focus:outline-none resize-none placeholder-[#B8C0CC]/40"
                         placeholder={`Provide context for your ${service.title} requirements...`}
                       />
                     </div>
