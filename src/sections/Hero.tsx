@@ -605,8 +605,8 @@ font-medium leading-none mt-1">
           {/* Testimonial Quote */}
           <div className="bg-white p-sm rounded-lg border border-[#E7E7E7] shadow-premium-sm flex flex-col items-center text-center">
             <img 
-              src="/assets/images/partner_portrait.png" 
-              alt="CA Rahul Jhunjhunwala" 
+              src="/assets/images/team/CA. Rohit Jhunjhunwala - Founder & Direct Tax Head.png" 
+              alt="CA Rohit Jhunjhunwala" 
               className="w-[48px] h-[48px] rounded-full object-cover border border-[#C9962B]/30 mb-2 shadow-premium-sm"
             />
             <div className="relative">
@@ -616,8 +616,8 @@ font-medium leading-none mt-1">
               </p>
             </div>
             <div className="mt-2">
-              <h4 className="font-serif text-[11px] font-bold text-[#071D49]">CA Rahul Jhunjhunwala</h4>
-              <span className="font-sans text-[7.5px] text-[#C9962B] uppercase tracking-wider font-semibold">Managing Partner</span>
+              <h4 className="font-serif text-[11px] font-bold text-[#071D49]">CA Rohit Jhunjhunwala</h4>
+              <span className="font-sans text-[7.5px] text-[#C9962B] uppercase tracking-wider font-semibold">Founder & Direct Tax Head</span>
             </div>
           </div>
         </div>
