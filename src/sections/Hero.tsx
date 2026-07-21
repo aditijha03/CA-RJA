@@ -173,7 +173,7 @@ export const Hero: React.FC = () => {
             <h1
               className="font-serif lg:text-[62px] xl:text-[66px] text-[#071D49] leading-[1.1] font-medium tracking-tight mt-0 animate-title"
             >
-              Accounting Excellence.<br />
+              Audit Excellence.<br />
               <span className="font-serif italic font-normal text-[#071D49]">Business Growth</span>
               <span className="text-[#C9962B]">.</span>
             </h1>

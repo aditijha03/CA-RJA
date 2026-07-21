@@ -35,7 +35,7 @@ export const BUTTON_LABELS = {
 export const HERO_DATA = {
   tagline: 'ESTABLISHED TRUST. EXCELLENCE DRIVEN.',
 
-  title: 'Accounting Excellence. Business Growth.',
+  title: 'Audit Excellence. Business Growth.',
 
   description:
     'R Jhunjhunwala & Associates is a trusted Chartered Accountant firm offering Tax Consultancy, GST Services, Income Tax Filing, Audit & Assurance, Accounting, Company Registration, ROC Compliance, and Business Advisory solutions for startups, SMEs, and growing enterprises across India.',
