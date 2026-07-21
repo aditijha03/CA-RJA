@@ -22,7 +22,10 @@ import {
   FileText, 
   Phone, 
   Mail, 
-  Clock 
+  Clock,
+  Award,
+  Globe,
+  Scale
 } from 'lucide-react';
 import { SERVICES_DETAIL_DATA } from '../constants/servicesData';
 import { CONTACT_DATA } from '../constants/data';
@@ -37,7 +40,11 @@ const IconMap: Record<string, React.ComponentType<{ className?: string; size?: n
   Users,
   Notebook,
   Coins,
-  Compass
+  Compass,
+  Award,
+  Globe,
+  Scale,
+  FileText
 };
 
 const ServiceIcon = ({ name, className, size = 20 }: { name: string; className?: string; size?: number }) => {
@@ -65,7 +72,14 @@ const getServiceImage = (slug: string) => {
     'accounting-services': '/assets/images/services/accounting_hero.png',
     'roc-compliance': '/assets/images/services/roc_hero.png',
     'company-llp-firms-trust-formation': '/assets/images/services/registration_hero.png',
-    'direct-tax-consultancy': '/assets/images/services/tax_hero.png'
+    'direct-tax-consultancy': '/assets/images/services/tax_hero.png',
+    'corporate-secretarial-services': '/assets/images/services/roc_hero.png',
+    'corporate-restructuring': '/assets/images/services/virtual_cfo_hero.png',
+    'fema-rbi-nbfc-compliance': '/assets/images/services/international_tax_hero.avif',
+    'secretarial-audit-and-certifications': '/assets/images/services/statutory_audit_hero.avif',
+    'legal-drafting-and-documentation': '/assets/images/services/registration_hero.png',
+    'intellectual-property-rights-ipr': '/assets/images/services/startup_hero.png',
+    'foreign-business-accounting': '/assets/images/services/accounting_hero.png'
   };
   
   return imageMap[slug] || '/assets/images/services/services_hero.png';
