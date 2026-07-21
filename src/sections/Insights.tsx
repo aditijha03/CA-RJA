@@ -182,7 +182,7 @@ export const Insights: React.FC = () => {
               {/* Author & Read trigger */}
               <div className="flex items-center justify-between border-t border-border/60 pt-sm mt-md">
                 <cite className="font-sans text-[11px] font-semibold text-text-muted not-italic">
-                  By {featuredArt.author || 'R. Jhunjhunwala'}
+                  By {featuredArt.author || 'R Jhunjhunwala'}
                 </cite>
 
                 <span className="inline-flex items-center font-sans text-[10px] md:text-xs font-semibold tracking-widest text-primary uppercase select-none pb-[2px] border-b border-transparent group-hover:border-primary transition-all duration-300">

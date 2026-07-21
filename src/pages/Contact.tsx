@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
               </span>
             </div>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-bg-canvas font-medium tracking-tight leading-tight mt-sm">
-              Speak With a Managing Partner
+              Speak With the Founder
             </h1>
             <p className="font-sans text-sm md:text-base text-border/75 leading-relaxed max-w-[520px] mt-sm">
               Whether you need a statutory audit, GST advisory, or a full compliance overhaul — our senior team responds to every enquiry within 24 business hours.
@@ -400,7 +400,7 @@ const Contact: React.FC = () => {
               <span className="font-sans text-[10px] font-bold tracking-[0.25em] text-accent uppercase">
                 Our Locations
               </span>
-              <h3 className="font-serif text-lg text-primary font-medium">R. Jhunjhunwala &amp; Associates</h3>
+              <h3 className="font-serif text-lg text-primary font-medium">R Jhunjhunwala &amp; Associates</h3>
               <div className="space-y-xs">
                 <div className="font-sans text-xs leading-relaxed text-text-muted">
                   <strong className="text-primary text-[10px] uppercase tracking-wider block mb-1">Registered Address:</strong>

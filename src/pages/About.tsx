@@ -180,16 +180,16 @@ export default function About() {
     // Row 2
     [
       { name: "CA. Mitesh Gogri", role: "CFO Service & Indirect Tax Head", image: "/assets/images/team/CA. Mitesh Gogri - CFO Service & Indirect Tax Head.png", bio: "" },
-      { name: "CS. Priti Narnolia", role: "Compliance Head", image: "/assets/images/team/CS. Priti Narnolia - Compliance Head.png" }
+      { name: "CS. Priti Narnolia", role: "Corporate Compliance Head", image: "/assets/images/team/CS. Priti Narnolia - Compliance Head.png" }
     ],
     // Row 3
     [
       { name: "CA. Isha Jhunjhunwala", role: "Business Valuation Head", image: "/assets/images/team/CA. Isha Jhunjhunwala - Business Valuation Head.png" },
-      { name: "CA. Nikita Agarwal", role: "GST Litigation and RERA Head", image: "/assets/images/team/CA. Nikita Agarwal - GST Litigation and RERA Head.png" },
-      { name: "Prince Patel", role: "Audit Manager", image: "/assets/images/team/Prince Patel - Audit Manager.png" }
+      { name: "CA. Nikita Agarwal", role: "GST Litigation and RERA Head", image: "/assets/images/team/CA. Nikita Agarwal - GST Litigation and RERA Head.png" }
     ],
     // Row 4
     [
+      { name: "Prince Patel", role: "Audit Manager", image: "/assets/images/team/Prince Patel - Audit Manager.png" },
       { name: "CS. Kamna Vyas", role: "Senior Compliance Officer", image: "/assets/images/team/CS. Kamna Vyas - Senior Compliance Officer.png" },
       { name: "Kajal Makwana", role: "Senior Accountant", image: "/assets/images/team/Kajal Makwana - Senior Accountant.png" },
       { name: "Kunal Kalambe", role: "Senior Accountant", image: "/assets/images/team/Kunal Kalambe - Senior Accountant.png" },
@@ -208,8 +208,8 @@ export default function About() {
   return (
     <div className="min-h-screen bg-bg-base text-text-main pb-16 font-sans relative overflow-hidden">
       <Helmet>
-        <title>About Us | R. Jhunjhunwala &amp; Associates</title>
-        <meta name="description" content="Discover the legacy of R. Jhunjhunwala &amp; Associates, a premier Chartered Accountancy firm delivering comprehensive financial, advisory, and compliance solutions since 2016." />
+        <title>About Us | R Jhunjhunwala &amp; Associates</title>
+        <meta name="description" content="Discover the legacy of R Jhunjhunwala &amp; Associates, a premier Chartered Accountancy firm delivering comprehensive financial, advisory, and compliance solutions since 2016." />
       </Helmet>
       <style>{`
         @keyframes marquee {
@@ -269,7 +269,7 @@ export default function About() {
             </h1>
             
             <p className="max-w-2xl text-lg md:text-xl text-white/80 font-sans leading-relaxed opacity-0 mb-12 drop-shadow-lg" ref={addToRefs}>
-              R. Jhunjhunwala & Associates is a premier Chartered Accountancy firm committed to delivering comprehensive financial, advisory, and compliance solutions that drive sustainable business success.
+              R Jhunjhunwala & Associates is a premier Chartered Accountancy firm committed to delivering comprehensive financial, advisory, and compliance solutions that drive sustainable business success.
             </p>
             
             {/* CTA Buttons matched to Homepage */}
@@ -321,7 +321,7 @@ export default function About() {
       <section className="bg-[#0B2341]/5 backdrop-blur-xl border border-[#0B2341]/10 py-24 rounded-[40px] mx-4 md:mx-12 shadow-premium-md mt-12 relative overflow-hidden">
         {/* Background Typography Watermark */}
         <div className="absolute right-0 top-1/2 -translate-y-1/2 text-[12rem] lg:text-[18rem] font-serif font-black text-[#0B2341]/[0.03] pointer-events-none whitespace-nowrap select-none">
-          EST. 2018
+          EST. 2016
         </div>
         {/* Decorative Glow */}
         <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#0B2341]/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -330,7 +330,7 @@ export default function About() {
             <div className="space-y-6">
               <h2 ref={addToRefs} className="text-3xl md:text-4xl font-serif font-bold text-text-main opacity-0">A Legacy of Trust and Professionalism</h2>
               <p ref={addToRefs} className="text-lg text-text-muted leading-relaxed opacity-0">
-                Founded with a vision to provide exceptional financial services, R. Jhunjhunwala & Associates has grown into a trusted partner for businesses across various sectors. Our expertise spans Audit, Taxation, GST, ROC Compliance, Financial Advisory, and Accounting Services.
+                Founded with a vision to provide exceptional financial services,<br></br> R Jhunjhunwala & Associates has grown into a trusted partner for businesses across various sectors. Our expertise spans Audit, Taxation, GST, ROC Compliance, Financial Advisory, and Accounting Services.
               </p>
               <p ref={addToRefs} className="text-lg text-text-muted leading-relaxed opacity-0">
                 We combine deep industry knowledge with a proactive approach to help our clients navigate complex regulatory environments, mitigate risks, and capitalize on new opportunities. Our team of seasoned professionals is dedicated to your financial well-being and corporate success.
@@ -353,7 +353,7 @@ export default function About() {
               <div className="aspect-[4/5] rounded-card-lg overflow-hidden shadow-premium-lg relative">
                 <div className="image-reveal-overlay absolute inset-0 bg-bg-base z-20 origin-top"></div>
                 <img 
-                  src="/assets/images/about/firm_overview.png" 
+                  src="/assets/images/about/firm_overview.jpeg" 
                   alt="Professional corporate meeting" 
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                 />
@@ -577,11 +577,11 @@ export default function About() {
           <div className="flex flex-col items-center gap-12 lg:gap-16 team-grid mb-24 w-full">
             {pyramidRows.map((row, rowIndex) => {
               // Determine card sizing based on hierarchy
-              let cardSizeClass = "w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(20%-1.6rem)] max-w-[380px]";
+              let cardSizeClass = "w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.33%-1rem)] lg:w-[calc(20%-1.75rem)] max-w-[380px]";
               
-              if (rowIndex <= 1) {
-                // Top 3 Members (Row 1 and Row 2) get the largest size
-                cardSizeClass = "w-full sm:w-[calc(80%-1rem)] md:w-[calc(50%-1rem)] lg:w-[calc(35%-1.6rem)] max-w-[500px]";
+              if (rowIndex <= 2) {
+                // Top Members (Row 1, 2, and 3) get the largest size
+                cardSizeClass = "w-full sm:w-[calc(80%-1rem)] md:w-[calc(50%-1rem)] lg:w-[calc(35%-1.75rem)] max-w-[500px]";
               }
 
               return (
@@ -605,8 +605,8 @@ export default function About() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-bg-base/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none"></div>
                       </div>
-                      <h3 className={`font-serif mb-1 text-text-main ${rowIndex <= 1 ? 'text-3xl font-bold' : 'text-xl font-bold'}`}>{member.name}</h3>
-                      <p className={`text-primary font-medium ${rowIndex <= 1 ? 'text-lg' : 'text-sm'}`}>{member.role}</p>
+                      <h3 className={`font-serif mb-1 text-text-main ${rowIndex <= 2 ? 'text-3xl font-bold' : 'text-xl font-bold'}`}>{member.name}</h3>
+                      <p className={`text-primary font-medium ${rowIndex <= 2 ? 'text-lg' : 'text-sm'}`}>{member.role}</p>
                       {/* @ts-ignore */}
                       {member.bio && (
                         <p className="text-text-muted leading-relaxed mt-2 text-sm">
