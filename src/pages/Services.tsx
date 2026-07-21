@@ -64,22 +64,22 @@ const getServiceImage = (slug: string) => {
     'gst-return-filing': '/assets/images/services/gst_return_hero.avif',
     'gst-annual-return-filing': '/assets/images/services/gst_annual_hero.avif',
     'tax-representation-litigation-assessments': '/assets/images/services/tax_litigation_hero.avif',
-    'gst-representation-litigation-assessments': '/assets/images/services/gst_hero.png',
-    'capital-gains-advisory': '/assets/images/services/tax_hero.png',
-    'tds-tcs-services': '/assets/images/services/tax_hero.png',
-    'virtual-cfo-services': '/assets/images/services/virtual_cfo_hero.png',
+    'gst-representation-litigation-assessments': '/assets/images/services/gst_litigation.png',
+    'capital-gains-advisory': '/assets/images/services/capital_gains.png',
+    'tds-tcs-services': '/assets/images/services/tds_tcs.png',
+    'virtual-cfo-services': '/assets/images/services/virtual_cfo.png',
     'startup-advisory': '/assets/images/services/startup_hero.png',
     'accounting-services': '/assets/images/services/accounting_hero.png',
     'roc-compliance': '/assets/images/services/roc_hero.png',
     'company-llp-firms-trust-formation': '/assets/images/services/registration_hero.png',
-    'direct-tax-consultancy': '/assets/images/services/tax_hero.png',
-    'corporate-secretarial-services': '/assets/images/services/roc_hero.png',
-    'corporate-restructuring': '/assets/images/services/virtual_cfo_hero.png',
-    'fema-rbi-nbfc-compliance': '/assets/images/services/international_tax_hero.avif',
-    'secretarial-audit-and-certifications': '/assets/images/services/statutory_audit_hero.avif',
-    'legal-drafting-and-documentation': '/assets/images/services/registration_hero.png',
+    'direct-tax-consultancy': '/assets/images/services/direct_tax.png',
+    'corporate-secretarial-services': '/assets/images/services/corporate_secretarial.png',
+    'corporate-restructuring': '/assets/images/services/corporate_restructuring.png',
+    'fema-rbi-nbfc-compliance': '/assets/images/services/Fema.png',
+    'secretarial-audit-and-certifications': '/assets/images/services/secretarial_audit.png',
+    'legal-drafting-and-documentation': '/assets/images/services/legal_drafting.png',
     'intellectual-property-rights-ipr': '/assets/images/services/startup_hero.png',
-    'foreign-business-accounting': '/assets/images/services/accounting_hero.png'
+    'foreign-business-accounting': '/assets/images/services/foreign_business.png'
   };
   
   return imageMap[slug] || '/assets/images/services/services_hero.png';
