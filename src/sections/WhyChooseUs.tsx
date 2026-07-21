@@ -137,7 +137,7 @@ export const WhyChooseUs: React.FC = () => {
               >
                 <div className="relative w-full h-full overflow-hidden border border-border/20 rounded-card-sm bg-primary-light">
                   <img
-                    src="/assets/images/rja.png"
+                    src="/assets/images/rja.jpeg"
                     alt={WHY_CHOOSE_US_DATA.imageDesc}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
