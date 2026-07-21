@@ -68,7 +68,7 @@ const getServiceImage = (slug: string) => {
     'capital-gains-advisory': '/assets/images/services/capital_gains.png',
     'tds-tcs-services': '/assets/images/services/tds_tcs.png',
     'virtual-cfo-services': '/assets/images/services/virtual_cfo.png',
-    'startup-advisory': '/assets/images/services/startup_hero.png',
+    'startup-advisory': '/assets/images/services/startup_hero.avif',
     'accounting-services': '/assets/images/services/accounting_hero.png',
     'roc-compliance': '/assets/images/services/roc_hero.png',
     'company-llp-firms-trust-formation': '/assets/images/services/registration_hero.png',
@@ -78,8 +78,15 @@ const getServiceImage = (slug: string) => {
     'fema-rbi-nbfc-compliance': '/assets/images/services/Fema.png',
     'secretarial-audit-and-certifications': '/assets/images/services/secretarial_audit.png',
     'legal-drafting-and-documentation': '/assets/images/services/legal_drafting.png',
-    'intellectual-property-rights-ipr': '/assets/images/services/startup_hero.png',
-    'foreign-business-accounting': '/assets/images/services/foreign_business.png'
+    'intellectual-property-rights-ipr': '/assets/images/services/startup.avif',
+    'foreign-business-accounting': '/assets/images/services/foreign_business.png',
+    'company-llp-firms-trust-formation': '/assets/images/services/company.avif',
+    'advisory-for-fdi-odi-expatriate' : '/assets/images/services/fdi.webp',
+    'payroll-and-labor-law-management' : '/assets/images/services/payroll.avif',
+    'forensic-audit-compliance' : '/assets/images/services/forensic.avif',
+    'due-diligence-services' : '/assets/images/services/due.avif',
+    'valuation-of-business-services' :  '/assets/images/services/valuation.avif',
+    'project-finance-services' : '/assets/images/services/project.avif'
   };
   
   return imageMap[slug] || '/assets/images/services/services_hero.png';
