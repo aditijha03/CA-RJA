@@ -50,9 +50,9 @@ export const INDUSTRIES = {
     description:
       "We help manufacturers and industrial units manage complex costing structures, multi-state GST compliance, plant-level audits, and working capital cycles — so leadership can focus on production, not paperwork.",
     stats: [
-      { value: "180+", label: "Manufacturing Clients Served" },
-      { value: "₹450Cr+", label: "Annual Turnover Audited" },
-      { value: "12+", label: "States GST Handled" },
+      { value: "18+", label: "Manufacturing Clients Served" },
+      { value: "₹100Cr+", label: "Annual Turnover Audited" },
+      { value: "5+", label: "States GST Handled" },
       { value: "0", label: "Penalty Notices in FY24" },
     ],
     highlights: [
@@ -185,8 +185,8 @@ export const INDUSTRIES = {
     description:
       "From RERA compliance to project-wise costing and joint development accounting, we give developers, builders, and contractors the financial clarity needed to deliver projects on time and within budget.",
     stats: [
-      { value: "95+", label: "Projects Under Advisory" },
-      { value: "₹1,200Cr+", label: "Project Value Managed" },
+      { value: "5+", label: "Projects Under Advisory" },
+      { value: "₹120Cr+", label: "Project Value Managed" },
       { value: "100%", label: "RERA Filings On Time" },
       { value: "10+", label: "Years in Real Estate Finance" },
     ],
@@ -316,8 +316,8 @@ export const INDUSTRIES = {
     description:
       "We support hospitals, clinics, diagnostic labs, and healthcare chains with specialised accounting, GST exemption handling, and trust & Section 8 compliance — so caregivers can stay focused on patients.",
     stats: [
-      { value: "60+", label: "Healthcare Entities Served" },
-      { value: "25+", label: "Hospitals & Clinics" },
+      { value: "6+", label: "Healthcare Entities Served" },
+      { value: "6+", label: "Hospitals & Clinics" },
       { value: "100%", label: "12A/80G Renewals On Time" },
       { value: "10+", label: "Years Healthcare Focus" },
     ],
@@ -447,10 +447,10 @@ export const INDUSTRIES = {
     description:
       "From incorporation to Series A, we help SaaS companies, IT service firms, and early-stage startups build investor-ready books, manage ESOPs, and stay compliant across export and domestic revenue streams.",
     stats: [
-      { value: "70+", label: "Startups Onboarded" },
-      { value: "₹200Cr+", label: "Funding Rounds Supported" },
+      { value: "7+", label: "Startups Onboarded" },
+      { value: "₹100Cr+", label: "Funding Rounds Supported" },
       { value: "100%", label: "Due Diligence Success Rate" },
-      { value: "40+", label: "ESOP Structures Designed" },
+      { value: "6+", label: "ESOP Structures Designed" },
     ],
     highlights: [
       {
@@ -582,10 +582,10 @@ export const INDUSTRIES = {
     description:
       "We help retail chains, FMCG distributors, and e-commerce sellers manage multi-outlet accounting, GST across state warehouses, and thin-margin inventory control with precision.",
     stats: [
-      { value: "140+", label: "Retail & FMCG Clients" },
-      { value: "600+", label: "Store Locations Reconciled" },
+      { value: "6+", label: "Retail & FMCG Clients" },
+      { value: "40+", label: "Store Locations Reconciled" },
       { value: "99.5%", label: "Inventory Accuracy Achieved" },
-      { value: "8+", label: "Marketplaces Supported" },
+      { value: "4+", label: "Marketplaces Supported" },
     ],
     highlights: [
       {
@@ -716,8 +716,8 @@ export const INDUSTRIES = {
     description:
       "We support NBFCs, microfinance institutions, and financial service providers with RBI compliance, NPA classification, and statutory reporting that satisfies regulators, auditors, and rating agencies alike.",
     stats: [
-      { value: "35+", label: "NBFCs & MFIs Advised" },
-      { value: "₹800Cr+", label: "Loan Book Reviewed" },
+      { value: "3+", label: "NBFCs & MFIs Advised" },
+      { value: "₹100Cr+", label: "Loan Book Reviewed" },
       { value: "100%", label: "RBI Returns Filed On Time" },
       { value: "10+", label: "Years Financial Sector Experience" },
     ],
