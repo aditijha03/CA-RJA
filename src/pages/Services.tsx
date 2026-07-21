@@ -440,7 +440,7 @@ const ServicesPage: React.FC = () => {
               >
                 <div className="relative w-full h-full overflow-hidden border border-border bg-bg-alt">
                   <img
-                    src="/assets/images/boardroom_consultation.jpeg"
+                    src="/assets/images/boardroom_consultation.png"
                     alt="Executive advisory consultation"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     loading="eager"
