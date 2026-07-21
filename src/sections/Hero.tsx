@@ -142,7 +142,7 @@ export const Hero: React.FC = () => {
       ref={sectionRef}
       id="home" 
       className="relative w-full bg-[#FAFAFA] overflow-hidden border-b border-[#E7E7E7]"
-      aria-label="R. Jhunjhunwala & Associates Landing Hero"
+      aria-label="R Jhunjhunwala & Associates Landing Hero"
     >
       {/* Background Radial Glow & Faint Texture */}
       <div className="absolute inset-0 pointer-events-none select-none z-0">
@@ -183,7 +183,7 @@ export const Hero: React.FC = () => {
   className="font-sans text-sm text-[#5E6472] leading-relaxed max-w-[500px] animate-desc opacity-0 mt-0"
 >
   <span className="text-[#071D49] font-semibold">
-    R. Jhunjhunwala & Associates
+    R Jhunjhunwala & Associates
   </span>{" "}
   is a trusted Chartered Accountant firm offering{" "}
   <span className="text-[#071D49]">Tax Consultancy</span>,{" "}
@@ -297,7 +297,7 @@ export const Hero: React.FC = () => {
               <div className="relative w-full h-full overflow-hidden rounded-[8px]">
                 <img
                   src="/assets/images/hero1.png"
-                  alt="R. Jhunjhunwala & Associates Partners reviewing client reports"
+                  alt="R Jhunjhunwala & Associates Partners reviewing client reports"
                   className="w-full h-full object-cover scale-100 hover:scale-[1.02] transition-transform duration-[800ms] ease-out"
                 />
               </div>
@@ -419,7 +419,7 @@ font-medium leading-none mt-1">
           <div className="lg:col-span-4 bg-white py-4 px-6 rounded-xl border border-[#E8E8E8] shadow-[0_10px_35px_rgba(7,29,73,0.04)] flex items-center space-x-md text-left hover:border-[#C9962B]/10 hover:shadow-premium-md transition-all duration-300">
             <img 
               src="/assets/images/team/CA. Rohit Jhunjhunwala - Founder & Direct Tax Head.png" 
-              alt="CA Rohit Jhunjhunwala" 
+              alt="CA. Rohit Jhunjhunwala" 
               className="w-[64px] h-[64px] rounded-full object-cover shrink-0 border border-[#C9962B]/20 bg-[#F7F8FA] shadow-sm"
             />
             <div className="flex-1 flex flex-col justify-center space-y-1">
@@ -427,11 +427,11 @@ font-medium leading-none mt-1">
                 Message from Founder
               </h4>
               <p className="font-sans text-[9.5px] text-[#5E6472] leading-relaxed">
-                At R. Jhunjhunwala & Associates, we believe in building long-term relationships by delivering Compliance, Transparency and Value to every client.
+                At R Jhunjhunwala & Associates, we believe in building long-term relationships by delivering Compliance, Transparency and Value to every client.
               </p>
               <div className="pt-0.5">
                 <span className="font-sans text-[9px] font-bold text-[#071D49] block leading-none">
-                  – CA Rohit Jhunjhunwala
+                  – CA. Rohit Jhunjhunwala
                 </span>
                 <span className="font-sans text-[7.5px] text-[#5E6472] uppercase tracking-wider font-semibold block mt-0.5">
                   Founder & Direct Tax Head
@@ -493,7 +493,7 @@ font-medium leading-none mt-1">
 
         {/* 5. Description */}
         <p className="font-sans text-xs text-center text-[#5E6472] leading-relaxed max-w-[420px] mx-auto animate-desc opacity-0 mt-0">
-          R. Jhunjhunwala & Associates is a trusted Chartered Accountant firm offering Tax Consultancy, GST Services, Income Tax Filing, Audit & Assurance, Accounting, Company Registration, ROC Compliance, and Business Advisory solutions across India.
+          R Jhunjhunwala & Associates is a trusted Chartered Accountant firm offering Tax Consultancy, GST Services, Income Tax Filing, Audit & Assurance, Accounting, Company Registration, ROC Compliance, and Business Advisory solutions across India.
         </p>
 
         {/* 6. CTA Buttons (Full-width, large tap targets) */}
@@ -606,7 +606,7 @@ font-medium leading-none mt-1">
           <div className="bg-white p-sm rounded-lg border border-[#E7E7E7] shadow-premium-sm flex flex-col items-center text-center">
             <img 
               src="/assets/images/team/CA. Rohit Jhunjhunwala - Founder & Direct Tax Head.png" 
-              alt="CA Rohit Jhunjhunwala" 
+              alt="CA. Rohit Jhunjhunwala" 
               className="w-[48px] h-[48px] rounded-full object-cover border border-[#C9962B]/30 mb-2 shadow-premium-sm"
             />
             <div className="relative">
@@ -616,7 +616,7 @@ font-medium leading-none mt-1">
               </p>
             </div>
             <div className="mt-2">
-              <h4 className="font-serif text-[11px] font-bold text-[#071D49]">CA Rohit Jhunjhunwala</h4>
+              <h4 className="font-serif text-[11px] font-bold text-[#071D49]">CA. Rohit Jhunjhunwala</h4>
               <span className="font-sans text-[7.5px] text-[#C9962B] uppercase tracking-wider font-semibold">Founder & Direct Tax Head</span>
             </div>
           </div>

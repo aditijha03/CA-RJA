@@ -28,7 +28,7 @@ export const Loader: React.FC<LoaderProps> = ({ onLoadingComplete }) => {
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-bg-base"
       style={{ clipPath: 'inset(0 0 0% 0)' }}
       role="status"
-      aria-label="Loading R. Jhunjhunwala & Associates"
+      aria-label="Loading R Jhunjhunwala & Associates"
     >
       <div className="flex flex-col items-center select-none">
         {/* Monogram */}
