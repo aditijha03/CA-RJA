@@ -54,7 +54,7 @@ const ServiceIcon = ({ name, className, size = 20 }: { name: string; className?:
 
 const getServiceImage = (slug: string) => {
   const imageMap: Record<string, string> = {
-    'us-accounting': '/assets/images/services/us_accounting.jpg',
+    'foreign-accounting': '/assets/images/services/us_accounting.jpg',
     'tax-planning-and-advisory': '/assets/images/services/tax_planning_hero.avif',
     'tax-audit-compliance': '/assets/images/services/tax_audit_hero.avif',
     'statutory-audit-compliance': '/assets/images/services/statutory_audit_hero.avif',
