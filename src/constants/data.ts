@@ -318,7 +318,7 @@ export const NEW_CLIENTS_DATA = [
   { id: 'client-1', name: 'Joinmay Mumbai Electronics Pvt. Ltd. (VIVO Mobiles)', logo: '/assets/images/clients/joinmay.jpg' },
   { id: 'client-2', name: 'Enpar Steels Pvt. Ltd.', logo: '/assets/images/clients/enpar.png' },
   { id: 'client-3', name: 'Saswat Financial Technologies Pvt. Ltd.', logo: '/assets/images/clients/saswat.png' },
-  { id: 'client-4', name: 'SFT Finance Pvt. Ltd. (NBFC)', logo: '/assets/images/clients/stft.png' },
+  { id: 'client-4', name: 'SFT Finance Pvt. Ltd. (NBFC)', logo: '/assets/images/clients/sft.png' },
   { id: 'client-5', name: 'Stakall LLP', logo: '/assets/images/clients/Stakall.png' },
   { id: 'client-6', name: 'Lighthouse Technologies Pvt. Ltd', logo: '/assets/images/clients/lighthouse.png' }
 ];

@@ -820,7 +820,7 @@ export const INDUSTRIES = {
       },
     ],
     clients: [
-      { name: "SFT Finance Pvt. Ltd. (NBFC)", logo: "/assets/images/clients/stft.png" }
+      { name: "SFT Finance Pvt. Ltd. (NBFC)", logo: "/assets/images/clients/sft.png" }
     ],
     faqs: [
       {
