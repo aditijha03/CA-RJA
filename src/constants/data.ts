@@ -65,8 +65,8 @@ export const SERVICES_DATA: Service[] = [
   {
     id: 'srv-usacct',
     num: '00',
-    title: 'US Accounting',
-    description: 'Expert US accounting, bookkeeping, US GAAP compliance, and tax preparation for businesses and CPA firms.',
+    title: 'Foreign Accounting',
+    description: 'Expert foreign accounting, bookkeeping, US GAAP / IFRS compliance, and tax preparation for businesses and CPA firms.',
     href: '#services',
     iconName: 'Globe',
   },

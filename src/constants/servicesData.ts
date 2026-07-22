@@ -1,23 +1,23 @@
 export const SERVICES_DETAIL_DATA: DetailedService[] = [
-  // 0. US Accounting
+  // 0. Foreign Accounting
   {
-    id: 'us-accounting',
-    slug: 'us-accounting',
-    title: 'US Accounting',
+    id: 'foreign-accounting',
+    slug: 'foreign-accounting',
+    title: 'Foreign Accounting',
     iconName: 'Globe',
-    heroDescription: 'Expert US accounting, bookkeeping, and tax preparation services tailored for businesses operating in the United States and CPA firms.',
+    heroDescription: 'Expert foreign accounting, bookkeeping, and tax preparation services tailored for businesses operating internationally and CPA firms.',
     layoutType: 'structured',
-    ctaText: 'Get US Accounting Support',
+    ctaText: 'Get Foreign Accounting Support',
     overview: {
-      whatIs: 'Comprehensive US accounting services including US GAAP compliance, bookkeeping, payroll, and tax return preparation.',
-      whoNeedsIt: 'US-based businesses, Indian companies with US subsidiaries, and US CPA firms seeking outsourcing partners.',
-      summaryBox: 'End-to-end US accounting and tax compliance services.'
+      whatIs: 'Comprehensive foreign accounting services including US GAAP / IFRS compliance, multi-currency bookkeeping, payroll, and tax return preparation.',
+      whoNeedsIt: 'Businesses operating internationally, Indian companies with foreign subsidiaries, and international CPA firms seeking outsourcing partners.',
+      summaryBox: 'End-to-end foreign accounting and international tax compliance services.'
     },
     features: [
-      { title: 'US Bookkeeping', description: 'QuickBooks and Xero bookkeeping, bank reconciliation, and financial reporting.', iconName: 'Notebook' },
-      { title: 'US Tax Preparation', description: 'Preparation of Federal and State tax returns for individuals and corporations.', iconName: 'Calculator' },
-      { title: 'Payroll Processing', description: 'W-2, W-4, 1099 processing and payroll tax compliance.', iconName: 'Users' },
-      { title: 'US GAAP Compliance', description: 'Financial statements preparation in accordance with US GAAP.', iconName: 'ShieldCheck' }
+      { title: 'Foreign Bookkeeping', description: 'QuickBooks, Xero and ERP bookkeeping, bank reconciliation, and multi-currency financial reporting.', iconName: 'Notebook' },
+      { title: 'Foreign Tax Preparation', description: 'Preparation of Federal/State and international tax returns for individuals and corporations.', iconName: 'Calculator' },
+      { title: 'Payroll Processing', description: 'Cross-border payroll processing and payroll tax compliance.', iconName: 'Users' },
+      { title: 'GAAP / IFRS Compliance', description: 'Financial statements preparation in accordance with US GAAP or IFRS.', iconName: 'ShieldCheck' }
     ],
     timeline: [
       { phase: 'Phase 01', title: 'Onboarding', description: 'Understanding business structure and setting up accounting software.' },
@@ -26,14 +26,14 @@ export const SERVICES_DETAIL_DATA: DetailedService[] = [
       { phase: 'Phase 04', title: 'Tax Filing', description: 'Year-end tax preparation and filing support.' }
     ],
     benefits: [
-      { title: 'Cost Efficiency', description: 'High-quality US accounting at competitive outsourcing rates.' },
-      { title: 'Accuracy & Compliance', description: 'Strict adherence to US tax laws and accounting standards.' },
+      { title: 'Cost Efficiency', description: 'High-quality foreign accounting at competitive outsourcing rates.' },
+      { title: 'Accuracy & Compliance', description: 'Strict adherence to international tax laws and accounting standards.' },
       { title: 'Time Savings', description: 'Focus on your core business while we handle the books.' }
     ],
     industries: ['Startups', 'IT & Technology', 'Professional Services'],
     faqs: [
-      { question: "Do you support both QuickBooks and Xero?", answer: "Yes, our team is proficient in major US accounting software including QuickBooks Online, Xero, and others." },
-      { question: "Can you help with US tax returns?", answer: "Yes, we prepare tax workpapers and returns (1040, 1120, 1120S, 1065) for review and filing." }
+      { question: "Do you support both QuickBooks and Xero?", answer: "Yes, our team is proficient in major global accounting software including QuickBooks Online, Xero, NetSuite, and others." },
+      { question: "Can you help with foreign tax returns?", answer: "Yes, we prepare tax workpapers and returns for review and filing in various jurisdictions." }
     ]
   },
 

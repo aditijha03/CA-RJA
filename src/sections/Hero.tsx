@@ -241,9 +241,9 @@ export const Hero: React.FC = () => {
         icon: Shield,
       },
       {
-        title: "US ACCOUNTING",
-        subtitle: "& Tax Services",
-        icon: Globe,
+        title: "TIMELY",
+        subtitle: "Compliance Support",
+        icon: Clock3,
       },
     ].map((item, index) => (
       <React.Fragment key={index}>
@@ -299,7 +299,7 @@ export const Hero: React.FC = () => {
                 <img
                   src="/assets/images/hero1.png"
                   alt="R Jhunjhunwala & Associates Partners reviewing client reports"
-                  className="w-full h-full object-cover scale-100 hover:scale-[1.02] transition-transform duration-[800ms] ease-out"
+                  className="w-full h-full object-cover object-top scale-100 hover:scale-[1.02] transition-transform duration-[800ms] ease-out"
                 />
               </div>
 
@@ -461,7 +461,7 @@ font-medium leading-none mt-1">
               <img
                 src="/assets/images/hero1.png"
                 alt="Partners reviewing client reports"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
@@ -502,11 +502,11 @@ font-medium leading-none mt-1">
         <div  className="w-full border-t border-b border-[#E7E7E7]/60 py-5 grid grid-cols-2 gap-y-6 gap-x-4 sm:grid-cols-3 md:flex md:justify-between md:gap-y-0">
           {[
             { label: 'ICAI Registered', icon: ShieldCheck, desc: 'Firm' },
-            { label: 'US Accounting', icon: Globe, desc: '& Tax Services' },
-            { label: 'Expert Advisory', icon: Trophy, desc: 'Tax & Audit' },
-            { label: 'Dedicated Support', icon: Building2, desc: 'Client-First' },
-            { label: '100% Compliant', icon: MapPin, desc: 'Solutions' },
-            { label: 'Confidential', icon: Lock, desc: '& Secure' }
+            { label: '10+ Years of', icon: Trophy, desc: 'Experience' },
+            { label: '500+ Businesses', icon: Building2, desc: 'Served' },
+            { label: 'PAN India', icon: MapPin, desc: 'Service Coverage' },
+            { label: 'Confidential', icon: Lock, desc: '& Secure' },
+            { label: 'Timely Compliance', icon: Clock, desc: 'Guaranteed' }
           ].map((item, idx) => (
             <div key={idx} className="flex flex-col items-center justify-start text-center space-y-[4px]">
               <item.icon size={16} className="text-[#C9962B] mb-1" />

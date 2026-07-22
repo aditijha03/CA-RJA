@@ -28,7 +28,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // === 33 SERVICES LIST (Updated) ===
   const SERVICES_ITEMS = [
-    { label: 'US Accounting', href: '/services/us-accounting' },
+    { label: 'Foreign Accounting', href: '/services/foreign-accounting' },
     { label: 'Tax Planning and Advisory', href: '/services/tax-planning-and-advisory' },
     { label: 'Tax Audit Compliance', href: '/services/tax-audit-compliance' },
     { label: 'Statutory Audit Compliance', href: '/services/statutory-audit-compliance' },
@@ -175,7 +175,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-md lg:space-x-lg md:absolute md:left-1/2 md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 h-full">
+          <nav className="hidden lg:flex flex-1 justify-center items-center space-x-4 xl:space-x-8 h-full px-4">
             {NAV_LINKS.map((link) => {
               let isActive = false;
               if (link.href === '/') {
@@ -318,39 +318,42 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
             })}
           </nav>
 
-          {/* Consultation Button */}
-          <div className="hidden md:block z-10 shrink-0">
+          {/* Right Action Area */}
+          <div className="flex items-center space-x-3 md:space-x-4 z-10 shrink-0">
+            {/* Consultation Button */}
+            <div className="hidden md:block">
+              <button
+                onClick={() => handleNavigation('/contact')}
+                className="group/btn inline-flex items-center justify-center border border-primary bg-primary text-white px-lg py-2.5 font-sans text-xs font-semibold tracking-widest uppercase hover:bg-white hover:text-primary hover:-translate-y-[1px] hover:shadow-premium-sm transition-all duration-300 ease-out rounded-none"
+              >
+                {BUTTON_LABELS.consultation}
+                <ArrowRight 
+                  size={14} 
+                  className="ml-2 transition-transform duration-300 ease-out group-hover/btn:translate-x-[4px]" 
+                />
+              </button>
+            </div>
+
+            {/* Mobile Menu Toggle */}
             <button
-              onClick={() => handleNavigation('/contact')}
-              className="group/btn inline-flex items-center justify-center border border-primary bg-primary text-white px-lg py-2.5 font-sans text-xs font-semibold tracking-widest uppercase hover:bg-white hover:text-primary hover:-translate-y-[1px] hover:shadow-premium-sm transition-all duration-300 ease-out rounded-none"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className={cn(
+                "lg:hidden p-xs focus:outline-none transition-colors",
+                theme === 'dark' ? "text-white hover:text-white/80" : "text-primary hover:text-accent"
+              )}
+              aria-expanded={isMobileMenuOpen}
+              aria-label="Toggle Navigation Menu"
             >
-              {BUTTON_LABELS.consultation}
-              <ArrowRight 
-                size={14} 
-                className="ml-2 transition-transform duration-300 ease-out group-hover/btn:translate-x-[4px]" 
-              />
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
-
-          {/* Mobile Menu Toggle */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={cn(
-              "md:hidden p-xs focus:outline-none transition-colors z-10",
-              theme === 'dark' ? "text-white hover:text-white/80" : "text-primary hover:text-accent"
-            )}
-            aria-expanded={isMobileMenuOpen}
-            aria-label="Toggle Navigation Menu"
-          >
-            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
         </div>
       </header>
 
       {/* Mobile Navigation Drawer */}
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-bg-canvas flex flex-col justify-between transition-transform duration-500 ease-in-out md:hidden transform translate-x-full",
+          "fixed inset-0 z-40 bg-bg-canvas flex flex-col justify-between transition-transform duration-500 ease-in-out lg:hidden transform translate-x-full",
           isMobileMenuOpen && "translate-x-0"
         )}
       >

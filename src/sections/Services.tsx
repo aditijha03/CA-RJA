@@ -27,7 +27,7 @@ const IconMap: Record<string, React.ComponentType<{ className?: string; size?: n
 };
 
 const slugMap: Record<string, string> = {
-  'srv-usacct': 'us-accounting',
+  'srv-usacct': 'foreign-accounting',
   'srv-audit': 'statutory-audit-compliance',
   'srv-gst': 'gst-return-filing',
   'srv-tax': 'income-tax-return-filing',
