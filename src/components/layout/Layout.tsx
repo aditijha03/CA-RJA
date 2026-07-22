@@ -39,7 +39,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           <a href="https://www.linkedin.com/in/jhunjhunwalarohit?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn" className="text-[#0077B5] hover:scale-115 transition-transform duration-200">
             <svg className="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.02-.5.1-.68a1.14 1.14 0 0 1 1-.77c.76 0 1 .56 1 1.39v4.73h2.8M6.5 8.37a1.37 1.37 0 0 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.13H5v8.37h3z"/></svg>
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook" className="text-[#1877F2] hover:scale-115 transition-transform duration-200">
+          <a href="https://www.facebook.com/share/1HdYTm5c9n/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook" className="text-[#1877F2] hover:scale-115 transition-transform duration-200">
             <svg className="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
           </a>
           <a href="https://www.instagram.com/cajhunjhunwalarohit?igsh=anV1b2wyODVieG1i" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram" className="text-[#E4405F] hover:scale-115 transition-transform duration-200">

@@ -366,7 +366,7 @@ export const CONTACT_DATA: ContactInfo = {
 export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'LinkedIn', href: 'https://www.linkedin.com/in/jhunjhunwalarohit?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
   { platform: 'Twitter', href: 'https://twitter.com' },
-  { platform: 'Facebook', href: 'https://facebook.com' },
+  { platform: 'Facebook', href: 'https://www.facebook.com/share/1HdYTm5c9n/' },
   { platform: 'Instagram', href: 'https://www.instagram.com/cajhunjhunwalarohit?igsh=anV1b2wyODVieG1i' },
 ];
 
