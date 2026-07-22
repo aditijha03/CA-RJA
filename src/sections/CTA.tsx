@@ -218,7 +218,7 @@ export const CTA: React.FC = () => {
                   <div className="flex flex-col">
                     <span className="font-sans text-[9px] font-bold text-text-muted tracking-wider uppercase">Business Hours</span>
                     <span className="font-sans text-xs text-primary mt-xxs">
-                      Mon - Sat: 09:00 - 18:00
+                      Mon - Sat: 10:00 - 19:00
                     </span>
                   </div>
                 </div>

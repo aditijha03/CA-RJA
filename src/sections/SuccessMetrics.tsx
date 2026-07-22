@@ -347,7 +347,7 @@ export const SuccessMetrics: React.FC = () => {
                 </span>
                 <span 
                   className="metric-number font-serif text-3xl font-medium text-neutral-900 mt-1"
-                  data-value={2000}
+                  data-value={200}
                   data-suffix="+"
                 >
                   0

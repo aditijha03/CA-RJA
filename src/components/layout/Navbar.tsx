@@ -26,8 +26,9 @@ export const Navbar: React.FC = () => {
 const dropdownRef = useRef<HTMLDivElement>(null);
 const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // === 32 SERVICES LIST (Updated) ===
+  // === 33 SERVICES LIST (Updated) ===
   const SERVICES_ITEMS = [
+    { label: 'US Accounting', href: '/services/us-accounting' },
     { label: 'Tax Planning and Advisory', href: '/services/tax-planning-and-advisory' },
     { label: 'Tax Audit Compliance', href: '/services/tax-audit-compliance' },
     { label: 'Statutory Audit Compliance', href: '/services/statutory-audit-compliance' },

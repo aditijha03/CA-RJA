@@ -75,21 +75,21 @@ export const ClientSlider: React.FC<ClientSliderProps> = ({
               <div className="marquee-content">
                 {clients.map((client) => (
                   variant === 'card' ? (
-                    <div key={`c1-${client.id}`} className="flex flex-col items-center justify-between p-6 md:p-8 bg-bg-canvas/50 backdrop-blur-md border border-border rounded-xl shadow-premium-sm group min-w-[280px] md:min-w-[320px] h-[220px] md:h-[260px] cursor-default hover:border-accent/30 transition-all duration-300">
+                    <div key={`c1-${client.id}`} className="flex flex-col items-center justify-between p-6 md:p-8 bg-bg-canvas/50 backdrop-blur-md border border-accent/30 md:border-border rounded-xl shadow-premium-sm group min-w-[280px] md:min-w-[320px] h-[220px] md:h-[260px] cursor-default md:hover:border-accent/30 transition-all duration-300">
                       <div className="flex-1 flex items-center justify-center w-full relative">
-                        <div className="absolute inset-0 bg-primary/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                        <img src={client.logo} alt={client.name} className="max-w-[160px] max-h-[100px] object-contain grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10 drop-shadow-sm" />
+                        <div className="absolute inset-0 bg-primary/5 rounded-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                        <img src={client.logo} alt={client.name} className="max-w-[160px] max-h-[100px] object-contain grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-500 relative z-10 drop-shadow-sm" />
                       </div>
-                      <span className="font-sans text-sm md:text-base font-bold text-text-main group-hover:text-primary transition-colors duration-300 text-center mt-6 w-full px-2">
+                      <span className="font-sans text-sm md:text-base font-bold text-primary md:text-text-main md:group-hover:text-primary transition-colors duration-300 text-center mt-6 w-full px-2">
                         {client.name}
                       </span>
                     </div>
                   ) : (
                     <div key={`c1-${client.id}`} className="flex items-center space-x-4 group cursor-default">
-                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-border bg-bg-canvas flex items-center justify-center p-2 group-hover:border-accent/40 group-hover:shadow-premium-sm transition-all duration-300 shrink-0 overflow-hidden">
-                        <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-accent/40 md:border-border bg-bg-canvas flex items-center justify-center p-2 shadow-premium-sm md:shadow-none md:group-hover:border-accent/40 md:group-hover:shadow-premium-sm transition-all duration-300 shrink-0 overflow-hidden">
+                        <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-300" />
                       </div>
-                      <span className="font-serif text-lg md:text-xl font-bold text-text-main group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
+                      <span className="font-serif text-lg md:text-xl font-bold text-primary md:text-text-main md:group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
                         {client.name}
                       </span>
                     </div>
@@ -99,21 +99,21 @@ export const ClientSlider: React.FC<ClientSliderProps> = ({
               <div className="marquee-content">
                 {clients.map((client) => (
                   variant === 'card' ? (
-                    <div key={`c2-${client.id}`} className="flex flex-col items-center justify-between p-6 md:p-8 bg-bg-canvas/50 backdrop-blur-md border border-border rounded-xl shadow-premium-sm group min-w-[280px] md:min-w-[320px] h-[220px] md:h-[260px] cursor-default hover:border-accent/30 transition-all duration-300">
+                    <div key={`c2-${client.id}`} className="flex flex-col items-center justify-between p-6 md:p-8 bg-bg-canvas/50 backdrop-blur-md border border-accent/30 md:border-border rounded-xl shadow-premium-sm group min-w-[280px] md:min-w-[320px] h-[220px] md:h-[260px] cursor-default md:hover:border-accent/30 transition-all duration-300">
                       <div className="flex-1 flex items-center justify-center w-full relative">
-                        <div className="absolute inset-0 bg-primary/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                        <img src={client.logo} alt={client.name} className="max-w-[160px] max-h-[100px] object-contain grayscale group-hover:grayscale-0 transition-all duration-500 relative z-10 drop-shadow-sm" />
+                        <div className="absolute inset-0 bg-primary/5 rounded-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                        <img src={client.logo} alt={client.name} className="max-w-[160px] max-h-[100px] object-contain grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-500 relative z-10 drop-shadow-sm" />
                       </div>
-                      <span className="font-sans text-sm md:text-base font-bold text-text-main group-hover:text-primary transition-colors duration-300 text-center mt-6 w-full px-2">
+                      <span className="font-sans text-sm md:text-base font-bold text-primary md:text-text-main md:group-hover:text-primary transition-colors duration-300 text-center mt-6 w-full px-2">
                         {client.name}
                       </span>
                     </div>
                   ) : (
                     <div key={`c2-${client.id}`} className="flex items-center space-x-4 group cursor-default">
-                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-border bg-bg-canvas flex items-center justify-center p-2 group-hover:border-accent/40 group-hover:shadow-premium-sm transition-all duration-300 shrink-0 overflow-hidden">
-                        <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-accent/40 md:border-border bg-bg-canvas flex items-center justify-center p-2 shadow-premium-sm md:shadow-none md:group-hover:border-accent/40 md:group-hover:shadow-premium-sm transition-all duration-300 shrink-0 overflow-hidden">
+                        <img src={client.logo} alt={client.name} className="max-w-full max-h-full object-contain grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-300" />
                       </div>
-                      <span className="font-serif text-lg md:text-xl font-bold text-text-main group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
+                      <span className="font-serif text-lg md:text-xl font-bold text-primary md:text-text-main md:group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
                         {client.name}
                       </span>
                     </div>

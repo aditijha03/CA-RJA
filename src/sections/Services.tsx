@@ -27,6 +27,7 @@ const IconMap: Record<string, React.ComponentType<{ className?: string; size?: n
 };
 
 const slugMap: Record<string, string> = {
+  'srv-usacct': 'us-accounting',
   'srv-audit': 'statutory-audit-compliance',
   'srv-gst': 'gst-return-filing',
   'srv-tax': 'income-tax-return-filing',
@@ -52,7 +53,7 @@ export const Services: React.FC = () => {
   const gridRef = useRef<HTMLDivElement>(null);
 
   const homeServices = SERVICES_DATA
-    .filter(srv => ['srv-audit', 'srv-gst', 'srv-tax', 'srv-roc', 'srv-incorp', 'srv-adv'].includes(srv.id))
+    .filter(srv => ['srv-usacct', 'srv-audit', 'srv-gst', 'srv-tax', 'srv-roc', 'srv-incorp'].includes(srv.id))
     .map((srv, index) => ({ ...srv, num: `0${index + 1}` }));
 
   useEffect(() => {
@@ -101,7 +102,7 @@ export const Services: React.FC = () => {
         {/* Bento Grid */}
         <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-12 gap-sm md:gap-md w-full items-stretch mt-xl">
           {homeServices.map((srv) => {
-            const isFeatured = srv.id === 'srv-audit' || srv.id === 'srv-adv';
+            const isFeatured = srv.id === 'srv-usacct' || srv.id === 'srv-incorp';
 
             return (
               <div

@@ -4,7 +4,6 @@ import type {
   Service, 
   Industry, 
   Metric, 
-  Testimonial, 
   Insight, 
   FooterSection, 
   ContactInfo, 
@@ -63,6 +62,14 @@ export const SERVICES_OVERVIEW = {
 };
 
 export const SERVICES_DATA: Service[] = [
+  {
+    id: 'srv-usacct',
+    num: '00',
+    title: 'US Accounting',
+    description: 'Expert US accounting, bookkeeping, US GAAP compliance, and tax preparation for businesses and CPA firms.',
+    href: '#services',
+    iconName: 'Globe',
+  },
   {
     id: 'srv-audit',
     num: '01',
@@ -286,33 +293,10 @@ export const METRICS_DATA: Metric[] = [
   { id: 'm-tax', value: 12, suffix: 'Cr+', label: 'Direct Tax Savings for Clients', chartData: [10, 25, 45, 60, 85, 120] },
   { id: 'm-ret', value: 85, suffix: '%', label: 'Repeat Client Advisory Volume', chartData: [70, 72, 75, 80, 82, 85] },
   { id: 'm-comp', value: 99.9, suffix: '%', label: 'On-Time Compliance Filing Record', chartData: [99.0, 99.2, 99.5, 99.7, 99.8, 99.9] },
-  { id: 'm-reg', value: 2000, suffix: '+', label: 'Businesses Incorporated', chartData: [200, 500, 900, 1300, 1700, 2000] },
+  { id: 'm-reg', value: 200, suffix: '+', label: 'Businesses Incorporated', chartData: [50, 80, 110, 140, 180, 200] },
 ];
 
-// Testimonials Section Content
-export const TESTIMONIALS_DATA: Testimonial[] = [
-  {
-    id: 'test-1',
-    quote: 'R Jhunjhunwala & Associates has been instrumental in our corporate restructuring and taxation planning. Their compliance foresight and audit transparency are exemplary. They operate with an elite degree of professional authority.',
-    author: 'Vikram Mehta',
-    role: 'Chief Executive Officer',
-    company: 'Mehta Industries Group',
-  },
-  {
-    id: 'test-2',
-    quote: 'Navigating startup compliance, ROC regulations, and GST filings felt overwhelming until we partnered with this firm. Their tech-savvy client portals and prompt advisories saved us countless hours of administrative friction.',
-    author: 'Dr. Ananya Roy',
-    role: 'Co-Founder & CEO',
-    company: 'Aether Bio-Tech',
-  },
-  {
-    id: 'test-3',
-    quote: 'Their statutory audit expertise gave our international investors complete confidence. The level of personalized detail and executive diligence they commit to is unparalleled in the Indian financial sector.',
-    author: 'Sanjay Kapoor',
-    role: 'Chief Financial Officer',
-    company: 'Trident Logistics India',
-  },
-];
+
 
 export const NEW_CLIENTS_DATA = [
   { id: 'client-1', name: 'Joinmay Mumbai Electronics Pvt. Ltd. (VIVO Mobiles)', logo: '/assets/images/clients/joinmay.jpg' },
@@ -335,7 +319,7 @@ export const INSIGHTS_DATA: Insight[] = [
     isFeatured: true,
     imageDesc: 'Corporate ledger and tax planning calculator on desk.',
     imageUrl: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800',
-    author: 'R Jhunjhunwala (Managing Partner)',
+    author: 'R Jhunjhunwala (Founder)',
   },
   {
     id: 'ins-2',
@@ -372,7 +356,7 @@ export const CTA_DATA = {
 
 // Contact details
 export const CONTACT_DATA: ContactInfo = {
-  phone: '+91 98765 43210',
+  phone: '+91 98206 74200',
   email: 'info@rjindia.com',
   address: `Registered Address:\nB-401/402, Sangam CHSLtd.,\nSuchidham, Near Dindoshi Bus Depot,\nFilm City Road, Malad East,\nMumbai - 400097.\n\nOffice Address:\nOffice No.028, Udyog Bhavan CHSLtd.,\nOpposite Zudio, Sonawala Road,\nJay Prakash Nagar, Goregaon East,\nMumbai - 400063`,
   mapsLink: 'https://www.google.com/maps?q=Office+No.028,+Udyog+Bhavan+Sonawala+Road+Goregaon+East+Mumbai',
@@ -380,10 +364,10 @@ export const CONTACT_DATA: ContactInfo = {
 
 // Socials
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: 'LinkedIn', href: 'https://linkedin.com' },
+  { platform: 'LinkedIn', href: 'https://www.linkedin.com/in/jhunjhunwalarohit?utm_source=share_via&utm_content=profile&utm_medium=member_ios' },
   { platform: 'Twitter', href: 'https://twitter.com' },
   { platform: 'Facebook', href: 'https://facebook.com' },
-  { platform: 'Instagram', href: 'https://instagram.com' },
+  { platform: 'Instagram', href: 'https://www.instagram.com/cajhunjhunwalarohit?igsh=anV1b2wyODVieG1i' },
 ];
 
 // Footer sections

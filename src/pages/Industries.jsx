@@ -47,7 +47,7 @@ function IndustryTabs({ activeSlug }) {
 ============================================================ */
 function IndustryHero({ industry }) {
   return (
-    <section data-theme="dark" className="relative h-[88vh] min-h-[700px] flex items-center">
+    <section data-theme="dark" className="relative min-h-[88vh] lg:min-h-[700px] flex items-center py-32">
       <img
         src={industry.heroImage}
         alt={industry.title}
@@ -505,16 +505,16 @@ function IndustryCTA({ industry }) {
           business?
         </h2>
         <div className="mt-10 flex flex-wrap justify-center gap-5">
-          <button className="group px-8 py-4 rounded-full bg-accent text-primary font-semibold flex items-center gap-3 hover:opacity-90 transition">
+          <Link to="/contact" className="group px-8 py-4 rounded-full bg-accent text-primary font-semibold flex items-center gap-3 hover:opacity-90 transition inline-block">
             Schedule Consultation
             <ArrowRight
               size={18}
               className="group-hover:translate-x-1 transition"
             />
-          </button>
-          <button className="px-8 py-4 rounded-full border border-white/30 text-white hover:bg-white hover:text-primary transition">
+          </Link>
+          <Link to="/contact" className="px-8 py-4 rounded-full border border-white/30 text-white hover:bg-white hover:text-primary transition inline-block">
             Talk to Our Team
-          </button>
+          </Link>
         </div>
       </Container>
     </section>

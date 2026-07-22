@@ -16,6 +16,9 @@ import  Industries  from "./pages/Industries";
 import Insights from "./pages/Insights";
 import Updates from "./pages/Updates";
 
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
+
 // 👇 New: separate component so we can safely call useLocation()
 function AppRoutes() {
   const location = useLocation();
@@ -34,6 +37,8 @@ function AppRoutes() {
       <Route path="/industries/:slug" element={<Industries key={location.pathname} />} /> {/* same fix, optional but recommended */}
       <Route path="/insights" element={<Insights />} />
       <Route path="/updates" element={<Updates />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
+      <Route path="/terms" element={<TermsOfUse />} />
     </Routes>
   );
 }

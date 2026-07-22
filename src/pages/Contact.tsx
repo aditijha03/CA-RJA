@@ -17,7 +17,7 @@ const CustomBulletCheck: React.FC = () => (
 
 const FAQ_ITEMS = [
   { q: 'Is the initial consultation free?', a: 'Yes. Our first session is a complimentary scoping call to understand your compliance and advisory needs before any engagement begins.' },
-  { q: 'How quickly will a partner respond?', a: 'All corporate briefs submitted through this form are reviewed and responded to within 24 business hours by a senior managing partner.' },
+  { q: 'How quickly will a proprietor respond?', a: 'All corporate briefs submitted through this form are reviewed and responded to within 24 business hours by a senior managing partner.' },
   { q: 'Do you work with businesses outside Mumbai?', a: 'Yes. We advise clients across India remotely, with in-person meetings available at our Goregaon East office by appointment.' },
   { q: 'What information should I include in my message?', a: 'A short outline of your entity type, current compliance status, and any deadlines (audit, GST, ROC filings) helps us prepare before the call.' },
 ];
@@ -229,7 +229,7 @@ const Contact: React.FC = () => {
                     <div className="p-xxs bg-bg-alt text-primary mt-xxs"><Clock size={12} /></div>
                     <div className="flex flex-col">
                       <span className="font-sans text-[9px] font-bold text-text-muted tracking-wider uppercase">Business hours</span>
-                      <span className="font-sans text-xs text-primary mt-xxs">Mon – Sat: 09:00 – 18:00</span>
+                      <span className="font-sans text-xs text-primary mt-xxs">Mon – Sat: 10:00 – 19:00</span>
                     </div>
                   </div>
                 </div>
