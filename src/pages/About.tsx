@@ -353,7 +353,7 @@ export default function About() {
               <div className="aspect-[4/5] rounded-card-lg overflow-hidden shadow-premium-lg relative">
                 <div className="image-reveal-overlay absolute inset-0 bg-bg-base z-20 origin-top"></div>
                 <img 
-                  src="/assets/images/about/firm_overview.jpeg" 
+                  src="/assets/images/about/firm.png" 
                   alt="Professional corporate meeting" 
                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-700"
                 />

@@ -38,54 +38,74 @@ export const Hero: React.FC = () => {
     const statsBars = section.querySelectorAll('.animate-stats-bar');
     const credentials = section.querySelectorAll('.animate-credentials');
 
+    const isVisible = (el: Element) => window.getComputedStyle(el).display !== 'none';
+
     taglines.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.1);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.1);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     titles.forEach((el) => {
-      const anim = splitReveal(el as HTMLElement, 0.2);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = splitReveal(el as HTMLElement, 0.2);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     descs.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.45);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.45);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     buttons.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.6);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.6);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     imageFrames.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.65);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.65);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     trustGrids.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.75);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.75);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     statsBars.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.85);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.85);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     credentials.forEach((el) => {
-      const anim = fadeIn(el as HTMLElement, undefined, 0.95);
-      if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const anim = fadeIn(el as HTMLElement, undefined, 0.95);
+        if (anim) cleanups.push(anim.kill);
+      }
     });
 
     // Stats Bar counter animation trigger
     const statCounters = section.querySelectorAll('.hero-stat-counter');
     statCounters.forEach((el) => {
-      const targetVal = parseFloat(el.getAttribute('data-target') || '0');
-      const suffix = el.getAttribute('data-suffix') || '';
-      if (targetVal) {
-        const anim = counter(el as HTMLElement, targetVal, suffix);
-        if (anim) cleanups.push(anim.kill);
+      if (isVisible(el)) {
+        const targetVal = parseFloat(el.getAttribute('data-target') || '0');
+        const suffix = el.getAttribute('data-suffix') || '';
+        if (targetVal) {
+          const anim = counter(el as HTMLElement, targetVal, suffix);
+          if (anim) cleanups.push(anim.kill);
+        }
       }
     });
 
@@ -172,7 +192,7 @@ export const Hero: React.FC = () => {
 
             {/* Typography Heading */}
             <h1
-              className="font-serif lg:text-[62px] xl:text-[66px] text-[#071D49] leading-[1.1] font-medium tracking-tight mt-0 animate-title"
+              className="font-serif text-5xl lg:text-[52px] xl:text-[66px] text-[#071D49] leading-[1.15] font-medium tracking-normal mt-0 animate-title"
             >
               Audit Excellence.<br />
               <span className="font-serif italic font-normal text-[#071D49]">Business Growth</span>
@@ -197,7 +217,7 @@ export const Hero: React.FC = () => {
 
             {/* Action buttons */}
             <div
-              className="flex flex-row items-center space-x-md w-auto pt-xs animate-buttons opacity-0"
+              className="flex flex-wrap items-center gap-4 pt-xs animate-buttons opacity-0"
             >
               <Link
                 to="/contact"
@@ -345,14 +365,14 @@ export const Hero: React.FC = () => {
                 <div className="flex flex-col">
                   {item.val !== null ? (
                     <span 
-                      className="hero-stat-counter font-sans text-base md:text-lg font-bold text-white leading-tight"
+                      className="hero-stat-counter font-sans text-sm font-bold text-white leading-tight whitespace-nowrap"
                       data-target={item.val}
                       data-suffix={item.suffix}
                     >
                       {item.displayVal}
                     </span>
                   ) : (
-                    <span className="font-sans text-base md:text-lg font-bold text-white leading-tight">
+                    <span className="font-sans text-sm font-bold text-white leading-tight whitespace-nowrap">
                       {item.displayVal}
                     </span>
                   )}
@@ -524,7 +544,7 @@ font-medium leading-none mt-1">
         <div className="w-full animate-fade-in pb-2 mt-2">
           <div 
             data-theme="dark"
-            className="w-full bg-[#071D49] rounded-xl border border-white/5 shadow-[0_16px_36px_-8px_rgba(7,29,73,0.12)] relative z-10 select-none grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row md:items-center py-6 gap-y-6 md:py-0 md:h-[80px] md:gap-y-0"
+            className="w-full bg-[#071D49] rounded-xl border border-white/5 shadow-[0_16px_36px_-8px_rgba(7,29,73,0.12)] relative z-10 select-none grid grid-cols-2 lg:flex lg:flex-row lg:items-center py-6 gap-y-6 lg:py-0 lg:h-[80px] lg:gap-y-0"
           >
             {[
               { val: 10, suffix: '+', displayVal: '10+', label: 'Years of Experience', icon: Trophy },
@@ -536,9 +556,9 @@ font-medium leading-none mt-1">
               <div 
                 key={idx} 
                 className={cn(
-                  "flex items-center space-x-3 justify-start px-5 md:px-6 h-full text-left border-white/10 w-full md:w-auto md:justify-center md:flex-1",
-                  idx !== 4 ? "md:border-r" : "",
-                  idx === 4 ? "col-span-2 sm:col-span-1 md:col-span-auto" : "" 
+                  "flex items-center space-x-3 justify-start px-5 md:px-6 h-full text-left border-white/10 w-full lg:w-auto lg:justify-center lg:flex-1",
+                  idx !== 4 ? "lg:border-r" : "",
+                  idx === 4 ? "col-span-2 lg:col-span-1 justify-center" : "" 
                 )}
               >
                 <div className="w-[32px] h-[32px] rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
@@ -558,7 +578,7 @@ font-medium leading-none mt-1">
                       item.displayVal
                     )}
                   </span>
-                  <span className="font-sans text-[9px] md:text-[10px] text-white/60 tracking-wider uppercase mt-[2px] leading-tight">
+                  <span className="font-sans text-[9px] lg:text-[10px] text-white/60 tracking-wider uppercase mt-[2px] leading-tight">
                     {item.label}
                   </span>
                 </div>
