@@ -175,7 +175,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex flex-1 justify-center items-center space-x-2 lg:space-x-3 xl:space-x-8 h-full px-2">
+          <nav className="hidden min-[1028px]:flex flex-1 justify-center items-center space-x-4 xl:space-x-8 h-full px-4">
             {NAV_LINKS.map((link) => {
               let isActive = false;
               if (link.href === '/') {
@@ -215,7 +215,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
       <Link
         to={link.href}
         className={cn(
-          "group relative font-sans text-[10px] xl:text-sm font-semibold tracking-wider transition-colors py-1 uppercase flex items-center cursor-pointer select-none",
+          "group relative font-sans text-xs lg:text-sm font-semibold tracking-wider transition-colors py-1 uppercase flex items-center cursor-pointer select-none",
           theme === 'dark' ? "text-white/80 hover:text-white" : "text-primary hover:text-accent",
           isActive && (theme === 'dark' ? "text-white font-bold" : "text-primary font-bold")
         )}
@@ -289,7 +289,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
                   key={link.href}
                   onClick={() => handleNavigation(link.href)}
                   className={cn(
-                    "group relative font-sans text-[10px] xl:text-sm font-semibold tracking-wider transition-colors py-1 uppercase flex items-center whitespace-nowrap",
+                    "group relative font-sans text-xs lg:text-sm font-semibold tracking-wider transition-colors py-1 uppercase flex items-center whitespace-nowrap",
                     theme === 'dark' ? "text-white/80 hover:text-white" : "text-primary hover:text-accent",
                     isActive && (theme === 'dark' ? "text-white font-bold" : "text-primary font-bold")
                   )}
@@ -324,7 +324,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
             <div className="hidden md:block">
               <button
                 onClick={() => handleNavigation('/contact')}
-                className="group/btn inline-flex items-center justify-center border border-primary bg-primary text-white px-4 xl:px-lg py-2.5 font-sans text-[10px] xl:text-xs font-semibold tracking-widest uppercase hover:bg-white hover:text-primary hover:-translate-y-[1px] hover:shadow-premium-sm transition-all duration-300 ease-out rounded-none"
+                className="group/btn inline-flex items-center justify-center border border-primary bg-primary text-white px-lg py-2.5 font-sans text-xs font-semibold tracking-widest uppercase hover:bg-white hover:text-primary hover:-translate-y-[1px] hover:shadow-premium-sm transition-all duration-300 ease-out rounded-none"
               >
                 {BUTTON_LABELS.consultation}
                 <ArrowRight 
@@ -338,7 +338,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={cn(
-                "xl:hidden p-xs focus:outline-none transition-colors",
+                "min-[1028px]:hidden p-xs focus:outline-none transition-colors",
                 theme === 'dark' ? "text-white hover:text-white/80" : "text-primary hover:text-accent"
               )}
               aria-expanded={isMobileMenuOpen}
@@ -353,7 +353,7 @@ const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
       {/* Mobile Navigation Drawer */}
       <div
         className={cn(
-          "fixed inset-0 z-40 bg-bg-canvas flex flex-col justify-between transition-transform duration-500 ease-in-out xl:hidden transform translate-x-full",
+          "fixed inset-0 z-40 bg-bg-canvas flex flex-col justify-between transition-transform duration-500 ease-in-out min-[1028px]:hidden transform translate-x-full",
           isMobileMenuOpen && "translate-x-0"
         )}
       >
