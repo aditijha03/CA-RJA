@@ -11,7 +11,7 @@ export default function TermsOfUse() {
           name="description"
           content="Terms of Use for R Jhunjhunwala & Associates, detailing our website's compliance with ICAI guidelines, non-solicitation, and terms of engagement."
         />
-        <link rel="canonical" href="https://rjindia.com/terms" />
+        <link rel="canonical" href="https://www.rjhunjhunwala.in/terms" />
       </Helmet>
 
       <section className="py-24 bg-bg-canvas relative overflow-hidden">

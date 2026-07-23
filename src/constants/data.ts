@@ -357,7 +357,7 @@ export const CTA_DATA = {
 // Contact details
 export const CONTACT_DATA: ContactInfo = {
   phone: '+91 98206 74200',
-  email: 'info@rjindia.com',
+  email: 'cajhunjhunwalarohit@gmail.com',
   address: `Registered Address:\nB-401/402, Sangam CHSLtd.,\nSuchidham, Near Dindoshi Bus Depot,\nFilm City Road, Malad East,\nMumbai - 400097.\n\nOffice Address:\nOffice No.028, Udyog Bhavan CHSLtd.,\nOpposite Zudio, Sonawala Road,\nJay Prakash Nagar, Goregaon East,\nMumbai - 400063`,
   mapsLink: 'https://www.google.com/maps?q=Office+No.028,+Udyog+Bhavan+Sonawala+Road+Goregaon+East+Mumbai',
 };

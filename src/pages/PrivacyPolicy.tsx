@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
           name="description"
           content="Privacy Policy for R Jhunjhunwala & Associates, outlining our information collection, data security, and confidentiality practices for our Chartered Accountant services."
         />
-        <link rel="canonical" href="https://rjindia.com/privacy" />
+        <link rel="canonical" href="https://www.rjhunjhunwala.in/privacy" />
       </Helmet>
 
       <section className="py-24 bg-bg-canvas relative overflow-hidden">
@@ -100,8 +100,8 @@ export default function PrivacyPolicy() {
               <p>
                 If you have any questions or requests regarding this Privacy Policy, please contact us:<br/><br/>
                 <strong>R Jhunjhunwala & Associates</strong><br/>
-                Office Address: 12th Floor, Trade World, Kamala Mills Compound, Lower Parel, Mumbai - 400013<br/>
-                Email: info@rjindia.com<br/>
+                Office Address: Office No.028, Udyog Bhavan CHSLtd., Opposite Zudio, Sonawala Road, Jay Prakash Nagar, Goregaon East, Mumbai - 400063<br/>
+                Email: cajhunjhunwalarohit@gmail.com<br/>
                 Phone: +91 98206 74200
               </p>
             </section>
